@@ -18,7 +18,7 @@ RUN npm install
 COPY . .
 
 # Generate Prisma client (important for Prisma 6)
-RUN npx prisma generate
+# RUN npx prisma generate
 
 # Build your TypeScript project
 RUN npm run build
@@ -41,11 +41,11 @@ WORKDIR /src
 COPY --from=builder /src/node_modules ./node_modules
 COPY --from=builder /src/dist ./dist
 COPY --from=builder /src/package*.json ./
-COPY --from=builder /src/prisma ./prisma
+# COPY --from=builder /src/prisma ./prisma
 
 # If you use Prisma in production, the client still needs schema + binaries
-RUN npx prisma generate
+# RUN npx prisma generate
 
-EXPOSE 3400
+EXPOSE 3500
 
 CMD ["node", "dist/index.js"]
