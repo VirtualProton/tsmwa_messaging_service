@@ -1,0 +1,26 @@
+[2025-10-27T17:13:59.263Z] INFO: Server running on port undefined
+[2025-10-27T17:14:45.371Z] INFO: Shutting down server...
+[2025-10-27T17:14:54.607Z] INFO: Server running on port 8000
+[2025-10-27T17:19:12.033Z] INFO: ::1 - - [27/Oct/2025:17:19:12 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:20:01.758Z] INFO: ::1 - - [27/Oct/2025:17:20:01 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:20:33.749Z] INFO: ::1 - - [27/Oct/2025:17:20:33 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:20:47.793Z] INFO: ::1 - - [27/Oct/2025:17:20:47 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:21:34.363Z] INFO: Server running on port 8000
+[2025-10-27T17:21:40.621Z] INFO: ::1 - - [27/Oct/2025:17:21:40 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:27:11.428Z] INFO: ::1 - - [27/Oct/2025:17:27:11 +0000] "GET / HTTP/1.1" 200 48 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:27:17.377Z] INFO: ::1 - - [27/Oct/2025:17:27:17 +0000] "GET /api HTTP/1.1" 404 142 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:27:27.045Z] INFO: ::1 - - [27/Oct/2025:17:27:27 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T17:28:10.341Z] INFO: Server running on port 8000
+[2025-10-27T17:28:14.212Z] INFO: Server running on port 8000
+[2025-10-27T17:37:09.213Z] INFO: Server running on port 8000
+[2025-10-27T17:37:20.729Z] INFO: Server running on port 8000
+[2025-10-27T17:37:29.885Z] INFO: ::1 - - [27/Oct/2025:17:37:29 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T18:24:18.745Z] INFO: Server running on port 8000
+[2025-10-27T18:24:31.687Z] INFO: Server running on port 8000
+[2025-10-27T18:24:41.387Z] INFO: Server running on port 8000
+[2025-10-27T18:25:02.560Z] INFO: ::1 - - [27/Oct/2025:18:25:02 +0000] "POST /api/otp HTTP/1.1" 400 481 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T18:25:22.773Z] INFO: ::1 - - [27/Oct/2025:18:25:22 +0000] "POST /api/otp HTTP/1.1" 400 245 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T18:25:32.171Z] INFO: ::1 - - [27/Oct/2025:18:25:32 +0000] "POST /api/otp HTTP/1.1" 400 92 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T18:26:23.418Z] INFO: Server running on port 8000
+[2025-10-27T18:26:28.702Z] INFO: ::1 - - [27/Oct/2025:18:26:28 +0000] "POST /api/otp HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T19:00:26.761Z] INFO: Shutting down server...
