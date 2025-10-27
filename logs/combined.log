@@ -24,3 +24,6 @@
 [2025-10-27T18:26:23.418Z] INFO: Server running on port 8000
 [2025-10-27T18:26:28.702Z] INFO: ::1 - - [27/Oct/2025:18:26:28 +0000] "POST /api/otp HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
 [2025-10-27T19:00:26.761Z] INFO: Shutting down server...
+[2025-10-27T19:57:13.299Z] INFO: Server running on port 3500
+[2025-10-27T19:57:36.571Z] INFO: ::1 - - [27/Oct/2025:19:57:36 +0000] "POST /api/otp HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-10-27T20:00:46.305Z] INFO: Shutting down server...
