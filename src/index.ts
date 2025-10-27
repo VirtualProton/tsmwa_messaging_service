@@ -20,7 +20,7 @@ app.use(
     })
 )
 app.get('/',(req:Request,res:Response)=>{
-    res.send('API is working. CORS is enabled for all origins.');
+    res.send('This is a api for TSMWA messaging service. CORS is enabled for all origins.');
 });
 
 app.use('/api', rootRouter);
