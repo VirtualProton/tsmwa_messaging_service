@@ -1,9 +1,9 @@
 import { getTwilioClient } from "../utils/TwilioClient";
 import { WhatsAppTemplates } from "../config/messageTemplates";
-import { TWILIO_MESSAGING_SERVICE_SID, TWILIO_WHATSAPP_NUMBER } from "../secrets";
+import {TWILIO_GENERAL_MESSAGING_SERVICE_SID, TWILIO_WHATSAPP_NUMBER } from "../secrets";
 
 const FROM = TWILIO_WHATSAPP_NUMBER;
-const SERVICE_SID = TWILIO_MESSAGING_SERVICE_SID;
+const SERVICE_SID = TWILIO_GENERAL_MESSAGING_SERVICE_SID;
 
 type WhatsAppMessageType = keyof typeof WhatsAppTemplates;
 
@@ -23,7 +23,7 @@ export const sendWhatsAppMessage = async (
   const variableValues = (template.variables as (...args: string[]) => string[])(...data);
 
   const variables = Object.fromEntries(
-    variableValues.map((val, i) => [i + 1, val])
+     variableValues.map((val, i) => [`${i + 1}`, val]) 
   );
 
   try {

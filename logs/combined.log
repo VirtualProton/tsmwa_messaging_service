@@ -1,29 +1,23 @@
-[2025-10-27T17:13:59.263Z] INFO: Server running on port undefined
-[2025-10-27T17:14:45.371Z] INFO: Shutting down server...
-[2025-10-27T17:14:54.607Z] INFO: Server running on port 8000
-[2025-10-27T17:19:12.033Z] INFO: ::1 - - [27/Oct/2025:17:19:12 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:20:01.758Z] INFO: ::1 - - [27/Oct/2025:17:20:01 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:20:33.749Z] INFO: ::1 - - [27/Oct/2025:17:20:33 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:20:47.793Z] INFO: ::1 - - [27/Oct/2025:17:20:47 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:21:34.363Z] INFO: Server running on port 8000
-[2025-10-27T17:21:40.621Z] INFO: ::1 - - [27/Oct/2025:17:21:40 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:27:11.428Z] INFO: ::1 - - [27/Oct/2025:17:27:11 +0000] "GET / HTTP/1.1" 200 48 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:27:17.377Z] INFO: ::1 - - [27/Oct/2025:17:27:17 +0000] "GET /api HTTP/1.1" 404 142 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:27:27.045Z] INFO: ::1 - - [27/Oct/2025:17:27:27 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T17:28:10.341Z] INFO: Server running on port 8000
-[2025-10-27T17:28:14.212Z] INFO: Server running on port 8000
-[2025-10-27T17:37:09.213Z] INFO: Server running on port 8000
-[2025-10-27T17:37:20.729Z] INFO: Server running on port 8000
-[2025-10-27T17:37:29.885Z] INFO: ::1 - - [27/Oct/2025:17:37:29 +0000] "POST /api/otp HTTP/1.1" 404 147 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T18:24:18.745Z] INFO: Server running on port 8000
-[2025-10-27T18:24:31.687Z] INFO: Server running on port 8000
-[2025-10-27T18:24:41.387Z] INFO: Server running on port 8000
-[2025-10-27T18:25:02.560Z] INFO: ::1 - - [27/Oct/2025:18:25:02 +0000] "POST /api/otp HTTP/1.1" 400 481 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T18:25:22.773Z] INFO: ::1 - - [27/Oct/2025:18:25:22 +0000] "POST /api/otp HTTP/1.1" 400 245 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T18:25:32.171Z] INFO: ::1 - - [27/Oct/2025:18:25:32 +0000] "POST /api/otp HTTP/1.1" 400 92 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T18:26:23.418Z] INFO: Server running on port 8000
-[2025-10-27T18:26:28.702Z] INFO: ::1 - - [27/Oct/2025:18:26:28 +0000] "POST /api/otp HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T19:00:26.761Z] INFO: Shutting down server...
-[2025-10-27T19:57:13.299Z] INFO: Server running on port 3500
-[2025-10-27T19:57:36.571Z] INFO: ::1 - - [27/Oct/2025:19:57:36 +0000] "POST /api/otp HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
-[2025-10-27T20:00:46.305Z] INFO: Shutting down server...
+[2025-11-02T06:47:38.889Z] INFO: Server running on port 3500
+[2025-11-02T06:49:55.865Z] INFO: Server running on port 3500
+[2025-11-02T06:50:08.855Z] INFO: Server running on port 3500
+[2025-11-02T06:50:10.041Z] INFO: Server running on port 3500
+[2025-11-02T06:53:57.585Z] INFO: Server running on port 3500
+[2025-11-02T06:54:25.713Z] INFO: Server running on port 3500
+[2025-11-02T06:55:15.778Z] INFO: Server running on port 3500
+[2025-11-02T07:01:09.731Z] INFO: Server running on port 3500
+[2025-11-02T07:01:17.104Z] INFO: Shutting down server...
+[2025-11-02T07:01:28.719Z] INFO: Server running on port 3500
+[2025-11-02T07:01:52.482Z] INFO: ::1 - - [02/Nov/2025:07:01:52 +0000] "POST /api/otp HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T07:10:47.290Z] INFO: Server running on port 3500
+[2025-11-02T07:15:37.495Z] INFO: Server running on port 3500
+[2025-11-02T07:16:00.656Z] INFO: Server running on port 3500
+[2025-11-02T07:17:10.444Z] INFO: Server running on port 3500
+[2025-11-02T07:18:18.848Z] INFO: Server running on port 3500
+[2025-11-02T07:18:57.107Z] INFO: Server running on port 3500
+[2025-11-02T07:19:29.650Z] INFO: Server running on port 3500
+[2025-11-02T07:21:29.245Z] INFO: Server running on port 3500
+[2025-11-02T07:25:18.486Z] INFO: Server running on port 3500
+[2025-11-02T07:26:27.814Z] INFO: Server running on port 3500
+[2025-11-02T07:26:40.289Z] INFO: Server running on port 3500
+[2025-11-02T07:26:46.346Z] INFO: Shutting down server...
