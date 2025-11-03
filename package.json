@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon",
+    "worker":"npx ts-node ./src/worker.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -13,13 +14,15 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "bullmq": "^5.63.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "ioredis": "^5.8.2",
     "logger": "^0.0.1",
     "morgan": "^1.10.1",
     "redis": "^5.9.0",
-    "twilio": "^5.10.3",
+    "twilio": "^5.10.4",
     "winston": "^3.18.3",
     "zod": "^4.1.12"
   },

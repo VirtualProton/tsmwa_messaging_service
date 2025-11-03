@@ -16,7 +16,13 @@ export const PaymentRemainderSchema = z.object({
     firmName: z.string().max(100),
     amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
     reason: z.string(),
-    dueDate: z.coerce.date() 
+    dueDate:  z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
 });
 
 export const PaymentRecievedSchema = z.object({
@@ -24,7 +30,13 @@ export const PaymentRecievedSchema = z.object({
     firmName: z.string(),
     amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
     reason: z.string(),
-    date: z.coerce.date(),
+    date: z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
 });
 
 export const PartialPaymentRecievedSchema = z.object({
@@ -32,54 +44,108 @@ export const PartialPaymentRecievedSchema = z.object({
     firmName: z.string(),
     paidAmount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
     dueAmount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
-    date: z.coerce.date(),
+    date: z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
 });
 
 export const MembershipExpirySchema = z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string(),
-    date: z.coerce.date(),
+    date: z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
     contact: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
 });
 
 export const MembershipExpiredSchema = z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string(),
-    date: z.coerce.date(),
+    date: z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
     contact: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
 });
 
 export const MembershipActivationSchema = z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string(),
-    fromDate: z.coerce.date(),
-    toDate: z.coerce.date(),
+    fromDate:  z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
+    toDate:  z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
 });
 
-export const MeetingScheduleSchema = z.object({
+export const MeetingScheduleSchema = z.array(
+  z.object({
+    phone: z
+      .string()
+      .regex(/^\d{10}$/, "Phone must be exactly 10 digits"),
+    firmName: z.string(),
+    title: z.string().min(6, "Title must be at least 6 characters"),
+    date: z
+      .string()
+      .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+      .transform((val) => {
+        const [day, month, year] = val.split("-");
+        return new Date(`${year}-${month}-${day}`);
+      }),
+    time: z.string(),
+    location: z.string(),
+  })
+);
+
+export const MeetingReminderSchema =z.array( z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string(),
     title: z.string().min(6),
-    date_time: z.coerce.date(),
-    location:z.string()
-});
+    date: z
+      .string()
+      .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+      .transform((val) => {
+        const [day, month, year] = val.split("-");
+        return new Date(`${year}-${month}-${day}`);
+      }),
+    time: z.string(),
+    location: z.string(),
+    starts_in: z.string()
+}));
 
-export const MeetingReminderSchema = z.object({
+export const MeetingCancelledSchema = z.array( z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string(),
     title: z.string().min(6),
-    date_time: z.coerce.date(),
-    location:z.string(),
-    starts_in:z.string()
-});
-
-export const MeetingCancelledSchema = z.object({
-    phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
-    firmName: z.string(),
-    title: z.string().min(6),
-    date_time: z.coerce.date(),
+    date: z
+      .string()
+      .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+      .transform((val) => {
+        const [day, month, year] = val.split("-");
+        return new Date(`${year}-${month}-${day}`);
+      }),
     reason: z.string()
-});
+}));
 
 
 

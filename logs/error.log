@@ -1,0 +1,222 @@
+[2025-11-02T17:46:39.796Z] ERROR: ❌ Error in PaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+]
+[2025-11-02T17:47:05.747Z] ERROR: ❌ Error in PaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+]
+[2025-11-02T17:52:08.885Z] ERROR: ❌ Error in PaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:22:09.283Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:22:58.090Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:25:27.191Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:25:52.737Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-03T07:50:30.095Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:30.966Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:31.412Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:31.876Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:32.342Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.

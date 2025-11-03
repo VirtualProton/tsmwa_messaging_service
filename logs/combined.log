@@ -21,3 +21,298 @@
 [2025-11-02T07:26:27.814Z] INFO: Server running on port 3500
 [2025-11-02T07:26:40.289Z] INFO: Server running on port 3500
 [2025-11-02T07:26:46.346Z] INFO: Shutting down server...
+[2025-11-02T17:45:16.852Z] INFO: Server running on port 3500
+[2025-11-02T17:46:39.796Z] ERROR: ❌ Error in PaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+]
+[2025-11-02T17:46:39.806Z] INFO: ::1 - - [02/Nov/2025:17:46:39 +0000] "POST /api/payment_received HTTP/1.1" 400 439 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T17:47:05.747Z] ERROR: ❌ Error in PaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected date, received Date"
+  }
+]
+[2025-11-02T17:47:05.750Z] INFO: ::1 - - [02/Nov/2025:17:47:05 +0000] "POST /api/payment_received HTTP/1.1" 400 439 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T17:52:08.885Z] ERROR: ❌ Error in PaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "reason"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T17:52:08.887Z] INFO: ::1 - - [02/Nov/2025:17:52:08 +0000] "POST /api/payment_received HTTP/1.1" 400 222 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T17:52:39.717Z] INFO: ::1 - - [02/Nov/2025:17:52:39 +0000] "POST /api/payment_received HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T17:58:30.596Z] INFO: Server running on port 3500
+[2025-11-02T17:58:37.462Z] INFO: ::1 - - [02/Nov/2025:17:58:37 +0000] "POST /api/payment_received HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:01:55.814Z] INFO: Server running on port 3500
+[2025-11-02T18:02:02.307Z] INFO: ::1 - - [02/Nov/2025:18:02:02 +0000] "POST /api/payment_received HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:05:21.741Z] INFO: Server running on port 3500
+[2025-11-02T18:05:24.608Z] INFO: ::1 - - [02/Nov/2025:18:05:24 +0000] "POST /api/payment_received HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:07:41.764Z] INFO: Server running on port 3500
+[2025-11-02T18:22:09.283Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:22:09.294Z] INFO: ::1 - - [02/Nov/2025:18:22:09 +0000] "POST /api/partial_Payment_received HTTP/1.1" 400 225 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:22:58.090Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:22:58.093Z] INFO: ::1 - - [02/Nov/2025:18:22:58 +0000] "POST /api/partial_Payment_received HTTP/1.1" 400 225 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:23:09.336Z] INFO: ::1 - - [02/Nov/2025:18:23:09 +0000] "POST /api/partial_Payment_received HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:25:27.191Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:25:27.193Z] INFO: ::1 - - [02/Nov/2025:18:25:27 +0000] "POST /api/partial_Payment_received HTTP/1.1" 400 420 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:25:52.737Z] ERROR: ❌ Error in PartialPaymentReceived controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "paidAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dueAmount"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "date"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-02T18:25:52.739Z] INFO: ::1 - - [02/Nov/2025:18:25:52 +0000] "POST /api/partial_Payment_received HTTP/1.1" 400 609 "-" "PostmanRuntime/7.39.1"
+[2025-11-02T18:26:23.350Z] INFO: [object Object]
+[2025-11-02T18:26:23.351Z] INFO: ::1 - - [02/Nov/2025:18:26:23 +0000] "POST /api/payment_remainder HTTP/1.1" 200 776 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T05:38:22.692Z] INFO: Shutting down server...
+[2025-11-03T07:35:30.444Z] INFO: Server running on port 3500
+[2025-11-03T07:41:37.076Z] INFO: Server running on port 3500
+[2025-11-03T07:43:15.050Z] INFO: Server running on port 3500
+[2025-11-03T07:45:08.635Z] INFO: Server running on port 3500
+[2025-11-03T07:46:25.326Z] INFO: Server running on port 3500
+[2025-11-03T07:46:46.891Z] INFO: ::1 - - [03/Nov/2025:07:46:46 +0000] "POST /meeting_schedule HTTP/1.1" 404 156 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T07:50:18.889Z] INFO: ::1 - - [03/Nov/2025:07:50:18 +0000] "POST /meeting_schedule HTTP/1.1" 404 156 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T07:50:29.109Z] INFO: Job added to queue!
+[2025-11-03T07:50:29.112Z] INFO: ::1 - - [03/Nov/2025:07:50:29 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T07:50:30.095Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:30.966Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:31.412Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:31.876Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:50:32.342Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T07:51:54.073Z] INFO: Server running on port 3500
+[2025-11-03T07:52:22.318Z] INFO: Job added to queue!
+[2025-11-03T07:52:22.326Z] INFO: ::1 - - [03/Nov/2025:07:52:22 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T07:52:23.226Z] INFO: ✅ Message sent to 9652314406 — SID: MMa7853eb4f0d855b46aeed133becc2e0f
+[2025-11-03T07:52:23.307Z] INFO: ✅ Job 2 completed
+[2025-11-03T07:54:55.601Z] INFO: Job added to queue!
+[2025-11-03T07:54:55.636Z] INFO: Job added to queue!
+[2025-11-03T07:54:55.672Z] INFO: Job added to queue!
+[2025-11-03T07:54:55.674Z] INFO: ::1 - - [03/Nov/2025:07:54:55 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T07:54:56.773Z] INFO: ✅ Message sent to 9652314406 — SID: MM15e0a1cfd12706236ba687fa22a2eaf9
+[2025-11-03T07:54:56.812Z] INFO: ✅ Job 3 completed
+[2025-11-03T07:54:57.271Z] INFO: ✅ Message sent to 8247542367 — SID: MM195283e8a60092671480d008a2b81ec6
+[2025-11-03T07:54:57.307Z] INFO: ✅ Job 4 completed
+[2025-11-03T07:54:57.753Z] INFO: ✅ Message sent to 9078569678 — SID: MM29da967edb78aec03a492be0719b0b5b
+[2025-11-03T07:54:57.790Z] INFO: ✅ Job 5 completed
+[2025-11-03T07:57:05.665Z] INFO: Server running on port 3500
+[2025-11-03T07:58:37.945Z] INFO: Server running on port 3500
+[2025-11-03T07:59:27.133Z] INFO: Server running on port 3500
+[2025-11-03T08:01:06.217Z] INFO: ::1 - - [03/Nov/2025:08:01:06 +0000] "POST /api/meeting_reminder HTTP/1.1" 404 160 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T08:01:30.000Z] INFO: Server running on port 3500
+[2025-11-03T08:01:36.074Z] INFO: Job added to queue!
+[2025-11-03T08:01:36.115Z] INFO: Job added to queue!
+[2025-11-03T08:01:36.154Z] INFO: Job added to queue!
+[2025-11-03T08:01:36.160Z] INFO: ::1 - - [03/Nov/2025:08:01:36 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T08:01:36.728Z] INFO: ✅ Message sent to 9652314406 — SID: MM592129d532d64f96f44a134faac813e6
+[2025-11-03T08:01:36.766Z] INFO: ✅ Job 6 completed
+[2025-11-03T08:01:37.282Z] INFO: ✅ Message sent to 8247542367 — SID: MMc8411abbce8e9aba7b9dc06d0a865ab2
+[2025-11-03T08:01:37.322Z] INFO: ✅ Job 7 completed
+[2025-11-03T08:01:37.729Z] INFO: ✅ Message sent to 9078569678 — SID: MM9ed909d11d9b47e3a557aea9f2c38341
+[2025-11-03T08:01:37.766Z] INFO: ✅ Job 8 completed
+[2025-11-03T08:05:24.960Z] INFO: Server running on port 3500
+[2025-11-03T08:06:06.273Z] INFO: Server running on port 3500
+[2025-11-03T08:06:35.355Z] INFO: Server running on port 3500
+[2025-11-03T08:06:58.814Z] INFO: Server running on port 3500
+[2025-11-03T08:07:59.132Z] INFO: Job added to queue!
+[2025-11-03T08:07:59.175Z] INFO: Job added to queue!
+[2025-11-03T08:07:59.216Z] INFO: Job added to queue!
+[2025-11-03T08:07:59.223Z] INFO: ::1 - - [03/Nov/2025:08:07:59 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T08:07:59.805Z] INFO: ✅ Message sent to 9652314406 — SID: MMfd8fb5bd380a931c70eb36a47bf7e64d
+[2025-11-03T08:07:59.838Z] INFO: ✅ Job 9 completed
+[2025-11-03T08:08:00.248Z] INFO: ✅ Message sent to 8247542367 — SID: MM3e0847cc8a00d5a9fecba927f44f95c9
+[2025-11-03T08:08:00.282Z] INFO: ✅ Job 10 completed
+[2025-11-03T08:08:01.140Z] INFO: ✅ Message sent to 9078569678 — SID: MMc63b384f4502295a767acae83c9b48d5
+[2025-11-03T08:08:01.175Z] INFO: ✅ Job 11 completed

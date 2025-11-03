@@ -67,4 +67,9 @@ export const WhatsAppTemplates = {
      templateSid: MEMBERSHIP_ACTIVATION_TEMPLATE_ID,
     variables: (firmName:string,fromDate: string, toDate:string) => [firmName,fromDate,toDate],
   },
+  // membership_declined:{
+  //    templateSid: MEMBERSHIP_ACTIVATION_TEMPLATE_ID,
+  //   variables: (firmName:string,fromDate: string, toDate:string) => [firmName,fromDate,toDate],
+  // },
+
 };
