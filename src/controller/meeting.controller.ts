@@ -2,7 +2,7 @@ import { Request, NextFunction, Response } from "express";
 import { MeetingCancelledSchema, MeetingReminderSchema, MeetingScheduleSchema} from "../schema/schema";
 
 import logger from "../utils/logger";
-import { sendMeetingNotification } from "../service/meetingNotificationService";
+import { sendNotification } from "../service/notificationService";
 // import { Request } from "../types/express";
 
 export const meeting_schedule = async (req: Request, res: Response, next: NextFunction) => {
@@ -17,7 +17,7 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
                 to:phone,
                 data: [firmName, title, formattedDate, time, location]
             }
-            await sendMeetingNotification(data);
+            await sendNotification(data);
         }
 
         return res.status(200).json({ success: true });
@@ -49,7 +49,7 @@ export const meeting_reminder = async (req: Request, res: Response, next: NextFu
                 to:phone,
                 data: [firmName, title, formattedDate, time, location,starts_in]
             }
-            await sendMeetingNotification(data);
+            await sendNotification(data);
         }
 
         return res.status(200).json({ success: true });
@@ -80,7 +80,7 @@ export const meeting_cancelled = async (req: Request, res: Response, next: NextF
                 to:phone,
                 data: [firmName, title, formattedDate, reason]
             }
-            await sendMeetingNotification(data);
+            await sendNotification(data);
         }
 
         return res.status(200).json({ success: true });

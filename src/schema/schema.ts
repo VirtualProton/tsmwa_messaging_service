@@ -5,6 +5,10 @@ export const AuthHeaderSchema = z.object({
     otp: z.string().regex(/^\d{6,}$/, "Invalid OTP"),
 });
 
+export const NewUser = z.object({
+    phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
+    name: z.string()
+});
 
 export const WelcomeSchema = z.object({
     firmName: z.string(),

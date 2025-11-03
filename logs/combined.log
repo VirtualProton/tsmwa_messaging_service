@@ -325,3 +325,33 @@
 [2025-11-03T13:31:50.726Z] INFO: Server running on port 3500
 [2025-11-03T13:32:04.636Z] INFO: Server running on port 3500
 [2025-11-03T13:33:36.985Z] INFO: Server running on port 3500
+[2025-11-03T13:56:33.912Z] INFO: Server running on port 3500
+[2025-11-03T14:00:33.068Z] INFO: Server running on port 3500
+[2025-11-03T14:01:54.294Z] INFO: Job added to queue!
+[2025-11-03T14:01:54.375Z] ERROR: ❌ Job 1 failed: ❌ No template found for type: NEW_USER_TEMPLATE_ID
+[2025-11-03T14:02:55.185Z] INFO: Server running on port 3500
+[2025-11-03T14:03:32.787Z] INFO: Server running on port 3500
+[2025-11-03T14:04:01.527Z] INFO: Server running on port 3500
+[2025-11-03T14:04:14.194Z] INFO: Job added to queue!
+[2025-11-03T14:04:14.200Z] INFO: ::1 - - [03/Nov/2025:14:04:14 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T14:04:32.486Z] INFO: Server running on port 3500
+[2025-11-03T14:04:34.937Z] INFO: Job added to queue!
+[2025-11-03T14:04:34.943Z] INFO: ::1 - - [03/Nov/2025:14:04:34 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T14:05:23.062Z] INFO: Job added to queue!
+[2025-11-03T14:05:23.063Z] INFO: ::1 - - [03/Nov/2025:14:05:23 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T14:05:25.056Z] INFO: ✅ Message sent to 9652314406 — SID: MM4edfed778813b76eae6fe46827f95645
+[2025-11-03T14:05:25.153Z] INFO: ✅ Job 4 completed
+[2025-11-03T14:08:39.732Z] INFO: Job added to queue!
+[2025-11-03T14:08:39.733Z] INFO: ::1 - - [03/Nov/2025:14:08:39 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T14:08:40.496Z] INFO: ✅ Message sent to 9652314406 — SID: MM817b9e5cef24850f2487af2df2ed1fd3
+[2025-11-03T14:08:40.544Z] INFO: ✅ Job 5 completed
+[2025-11-03T14:09:50.274Z] INFO: Server running on port 3500
+[2025-11-03T14:09:53.301Z] INFO: Job added to queue!
+[2025-11-03T14:09:53.308Z] INFO: ::1 - - [03/Nov/2025:14:09:53 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T14:10:09.122Z] INFO: Job added to queue!
+[2025-11-03T14:10:09.124Z] INFO: ::1 - - [03/Nov/2025:14:10:09 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T14:10:40.317Z] INFO: Job added to queue!
+[2025-11-03T14:10:40.319Z] INFO: ::1 - - [03/Nov/2025:14:10:40 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T14:10:41.301Z] INFO: ✅ Message sent to 9652314406 — SID: MM78e5e5265a820a02518ed538d422d28d
+[2025-11-03T14:10:41.388Z] INFO: ✅ Job 8 completed
+[2025-11-03T14:11:51.605Z] INFO: Shutting down server...

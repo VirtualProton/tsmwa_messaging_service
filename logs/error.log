@@ -220,3 +220,4 @@
 [2025-11-03T07:50:31.412Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
 [2025-11-03T07:50:31.876Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
 [2025-11-03T07:50:32.342Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
+[2025-11-03T14:01:54.375Z] ERROR: ❌ Job 1 failed: ❌ No template found for type: NEW_USER_TEMPLATE_ID
