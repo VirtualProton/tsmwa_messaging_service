@@ -48,4 +48,5 @@ COPY --from=builder /src/package*.json ./
 
 EXPOSE 3500
 
-CMD ["node", "dist/index.js"]
+# CMD ["node", "dist/index.js"]
+CMD ["node", "dist/worker.js"]
