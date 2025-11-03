@@ -3,7 +3,7 @@ import { Otp } from "../controller/Otp.Controller";
 import { welcome } from "../controller/welcome.Controller";
 import { PartialPaymentReceived, PaymentReceived, PaymentRemainder } from "../controller/Payment.Controller";
 import { membership_activation_reminder, membership_expired_reminder, membership_expiry_reminder } from "../controller/membership.controller";
-import { meeting_cancelled, meeting_reminder, meeting_schedule } from "../controller/Meeting.Controller";
+import { meeting_cancelled, meeting_reminder, meeting_schedule } from "../controller/Meeting.controller";
 const rootRouter: Router = Router();
 
 
