@@ -46,7 +46,7 @@ COPY --from=builder /src/package*.json ./
 # If you use Prisma in production, the client still needs schema + binaries
 # RUN npx prisma generate
 
-# EXPOSE 3500
+EXPOSE 3500
 
-# CMD ["node", "dist/index.js"]
-CMD ["node", "dist/worker.js"]
+CMD ["node", "dist/index.js"]
+# CMD ["node", "dist/worker.js"]
