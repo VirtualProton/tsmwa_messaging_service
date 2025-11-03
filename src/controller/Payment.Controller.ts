@@ -3,6 +3,7 @@ import { Request, NextFunction, Response } from "express";
 import { PartialPaymentRecievedSchema, PaymentRecievedSchema, PaymentRemainderSchema } from "../schema/schema";
 import { sendWhatsAppMessage } from "../service/whatsappService";
 import logger from "../utils/logger";
+import { sendNotification } from "../service/notificationService";
 
 export const PaymentRemainder = async (req: Request, res: Response, next: NextFunction) => {
     console.log("🔔 PaymentRemainder Controller accessed");
@@ -10,9 +11,16 @@ export const PaymentRemainder = async (req: Request, res: Response, next: NextFu
         const { phone, firmName, amount, reason, dueDate } = PaymentRemainderSchema.parse(req.body);
         const today = new Date(dueDate);
         const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
-        const result = await sendWhatsAppMessage("payment_remainder", `+91${phone}`, [firmName, amount, reason, formattedDate]);
-        logger.info(result);
-        return res.status(200).json({ success: true, result });
+        // const result = await sendWhatsAppMessage("payment_remainder", `+91${phone}`, [firmName, amount, reason, formattedDate]);
+        // logger.info(result);
+        // return res.status(200).json({ success: true, result });
+        const data: any = {
+            type: "payment_remainder",
+            to: phone,
+            data: [firmName, amount, reason, formattedDate]
+        }
+        await sendNotification(data);
+        return res.status(200).json({ success: true });
     } catch (err) {
         if (err instanceof Error) {
             logger.error(`❌ Error in payment remainder controller: ${err.message}`, err);
@@ -42,9 +50,17 @@ export const PaymentReceived = async (req: Request, res: Response, next: NextFun
 
 
         // console.log("✅ PaymentReceived Controller accessed with phone:", phone, "and amount:", amount);
-        const result = await sendWhatsAppMessage("payment_received", `+91${phone}`, [firmName, amount, reason, formattedToday]);
+        // const result = await sendWhatsAppMessage("payment_received", `+91${phone}`, [firmName, amount, reason, formattedToday]);
 
-        return res.status(200).json({ success: true, result });
+        // return res.status(200).json({ success: true, result });
+
+        const data: any = {
+            type: "payment_received",
+            to: phone,
+            data: [firmName, amount, reason, formattedToday]
+        }
+        await sendNotification(data);
+        return res.status(200).json({ success: true });
 
     } catch (err) {
         if (err instanceof Error) {
@@ -69,9 +85,17 @@ export const PartialPaymentReceived = async (req: Request, res: Response, next: 
 
         const formattedToday = new Date(date).toLocaleDateString("en-GB").replace(/\//g, "-");
 
-        const result = await sendWhatsAppMessage("partial_payment", `+91${phone}`, [firmName, paidAmount, dueAmount, formattedToday]);
+        // const result = await sendWhatsAppMessage("partial_payment", `+91${phone}`, [firmName, paidAmount, dueAmount, formattedToday]);
 
-        return res.status(200).json({ success: true, result });
+        // return res.status(200).json({ success: true, result });
+
+        const data: any = {
+            type: "partial_payment",
+            to: phone,
+            data: [firmName, paidAmount, dueAmount, formattedToday]
+        }
+        await sendNotification(data);
+        return res.status(200).json({ success: true });
 
     } catch (err) {
         if (err instanceof Error) {
