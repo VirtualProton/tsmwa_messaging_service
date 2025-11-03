@@ -1,5 +1,11 @@
+import fs from "fs";
+import path from "path";
 import { createLogger, format, transports } from "winston";
-
+// ensure log folder exists
+const logDir = path.join(process.cwd(), "logs");
+if (!fs.existsSync(logDir)) {
+  fs.mkdirSync(logDir);
+}
 const logger = createLogger({
   level: "info", // Log levels: 'error', 'warn', 'info', 'http', 'verbose', 'debug', 'silly'
   format: format.combine(
@@ -16,3 +22,16 @@ const logger = createLogger({
 });
 
 export default logger;
+
+// helper function to read logs
+export const getErrorLog = () => {
+  const filePath = path.join(logDir, "error.log");
+  if (!fs.existsSync(filePath)) return "No error logs found.";
+  return fs.readFileSync(filePath, "utf8");
+};
+
+export const getCombinedLog = () => {
+  const filePath = path.join(logDir, "combined.log");
+  if (!fs.existsSync(filePath)) return "No combined logs found.";
+  return fs.readFileSync(filePath, "utf8");
+};

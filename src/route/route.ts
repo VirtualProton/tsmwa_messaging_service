@@ -5,8 +5,10 @@ import { PartialPaymentReceived, PaymentReceived, PaymentRemainder } from "../co
 import { membership_activation_reminder, membership_expired_reminder, membership_expiry_reminder } from "../controller/membership.controller";
 import { meeting_cancelled, meeting_reminder, meeting_schedule } from "../controller/meeting.controller";
 import { newUser } from "../controller/user.controller";
+import { getLogs } from "../controller/log.controller";
 const rootRouter: Router = Router();
 
+rootRouter.get('/logs',getLogs);
 
 rootRouter.post("/otp", Otp);
 rootRouter.get("/welcome", welcome)

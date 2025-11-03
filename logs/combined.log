@@ -361,3 +361,15 @@
 [2025-11-03T14:44:05.073Z] INFO: Job added to queue!
 [2025-11-03T14:44:05.080Z] INFO: ::1 - - [03/Nov/2025:14:44:05 +0000] "POST /api/new_user HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
 [2025-11-03T14:44:53.082Z] INFO: Shutting down server...
+[2025-11-03T14:49:02.015Z] INFO: ✅ Message sent to 9652314406 — SID: MM7a43bfea92b287a1c2bc2802d92d6b90
+[2025-11-03T14:49:02.121Z] INFO: ✅ Job 11 completed
+[2025-11-03T15:35:15.289Z] INFO: ✅ Message sent to 9652314406 — SID: MM84f4307c9b0bacd6b5c79cac1925c36b
+[2025-11-03T15:35:15.335Z] INFO: ✅ Job 1 completed
+[2025-11-03T16:24:04.671Z] INFO: ✅ Message sent to 8247542367 — SID: MM41b9095e944083d3de2bccbbfdfd214c
+[2025-11-03T16:24:04.715Z] INFO: ✅ Job 1 completed
+[2025-11-03T19:43:41.580Z] INFO: Server running on port 3500
+[2025-11-03T19:44:10.127Z] INFO: Server running on port 3500
+[2025-11-03T19:44:19.354Z] INFO: ::1 - - [03/Nov/2025:19:44:19 +0000] "POST /api/logs?type=error HTTP/1.1" 404 148 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T19:44:25.103Z] INFO: ::1 - - [03/Nov/2025:19:44:25 +0000] "GET /api/logs?type=error HTTP/1.1" 200 5636 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T19:44:52.953Z] INFO: ::1 - - [03/Nov/2025:19:44:52 +0000] "GET /api/logs?type=combined HTTP/1.1" 200 17961 "-" "PostmanRuntime/7.39.1"
+[2025-11-03T19:45:17.714Z] INFO: Shutting down server...
