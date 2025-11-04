@@ -1,5 +1,5 @@
 import { Request, NextFunction, Response } from "express";
-import { MeetingCancelledSchema, MeetingReminderSchema, MeetingScheduleSchema} from "../schema/schema";
+import { MeetingCancelledSchema, MeetingReminderSchema, MeetingScheduleSchema } from "../schema/schema";
 
 import logger from "../utils/logger";
 import { sendNotification } from "../service/notificationService";
@@ -9,14 +9,21 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
     console.log("meeting_schedule")
     try {
         const meetings = MeetingScheduleSchema.parse(req.body);
-        for (const { phone, firmName, title, date, time, location } of meetings) {
+        for (const { phone, firmName, title, date, time, location, agenda, note } of meetings) {
             const today = new Date(date);
             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
-            const data:any = {
+
+            const notes =
+                (agenda ? `Agenda: ${agenda}` : "") +
+                (note ? `\nNote: ${note}` : "");
+
+
+            const data: any = {
                 type: "meeting_schedule",
-                to:phone,
-                data: [firmName, title, formattedDate, time, location]
+                to: phone,
+                data: [firmName, title, formattedDate, time, location, notes]
             }
+            
             await sendNotification(data);
         }
 
@@ -44,10 +51,10 @@ export const meeting_reminder = async (req: Request, res: Response, next: NextFu
         for (const { phone, firmName, title, date, time, location, starts_in } of meetings) {
             const today = new Date(date);
             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
-            const data:any = {
+            const data: any = {
                 type: "meeting_reminder",
-                to:phone,
-                data: [firmName, title, formattedDate, time, location,starts_in]
+                to: phone,
+                data: [firmName, title, formattedDate, time, location, starts_in]
             }
             await sendNotification(data);
         }
@@ -75,9 +82,9 @@ export const meeting_cancelled = async (req: Request, res: Response, next: NextF
         for (const { phone, firmName, title, date, reason } of meetings) {
             const today = new Date(date);
             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
-            const data:any = {
+            const data: any = {
                 type: "meeting_cancelled",
-                to:phone,
+                to: phone,
                 data: [firmName, title, formattedDate, reason]
             }
             await sendNotification(data);

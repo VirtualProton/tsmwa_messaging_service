@@ -118,6 +118,9 @@ export const MeetingScheduleSchema = z.array(
       }),
     time: z.string(),
     location: z.string(),
+    agenda:z.string().optional(),
+    note:z.string().optional()
+
   })
 );
 

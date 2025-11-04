@@ -36,7 +36,7 @@ app.use('/api', rootRouter);
 app.listen(PORT || 8000, async()=>{
 
     // await redis.flushall();
-    console.log("APP is working");
+    console.log("APP is working", `Port: ${PORT}`);
 
 })
 
