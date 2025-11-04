@@ -32,12 +32,13 @@ export const WhatsAppTemplates = {
 
   meeting_schedule: {
     templateSid: MEETING_SCHEDULED_TEMPLATE_ID,
-    variables: (firmName:string, title: string, date: string, time: string, location: string) => [
+    variables: (firmName:string, title: string, date: string, time: string, location: string, note:string) => [
       firmName,
       title,
       date,
       time,
       location,
+      note
     ],
   },
 
