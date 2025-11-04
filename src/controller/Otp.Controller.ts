@@ -22,7 +22,7 @@ export const Otp = async (req: Request, res: Response, next: NextFunction) => {
             to: phone,
             data: [otp]
         }
-        await sendNotification(data);
+        await sendNotification(data,1);
         return res.status(200).json({ success: true });
 
     } catch (err) {

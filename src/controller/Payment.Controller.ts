@@ -19,7 +19,7 @@ export const PaymentRemainder = async (req: Request, res: Response, next: NextFu
             to: phone,
             data: [firmName, amount, reason, formattedDate]
         }
-        await sendNotification(data);
+        await sendNotification(data,2);
         return res.status(200).json({ success: true });
     } catch (err) {
         if (err instanceof Error) {
@@ -59,7 +59,7 @@ export const PaymentReceived = async (req: Request, res: Response, next: NextFun
             to: phone,
             data: [firmName, amount, reason, formattedToday]
         }
-        await sendNotification(data);
+        await sendNotification(data,2);
         return res.status(200).json({ success: true });
 
     } catch (err) {
@@ -94,7 +94,7 @@ export const PartialPaymentReceived = async (req: Request, res: Response, next: 
             to: phone,
             data: [firmName, paidAmount, dueAmount, formattedToday]
         }
-        await sendNotification(data);
+        await sendNotification(data,2);
         return res.status(200).json({ success: true });
 
     } catch (err) {
