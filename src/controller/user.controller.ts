@@ -12,7 +12,7 @@ export const newUser = async (req: Request, res: Response, next: NextFunction) =
                 to:user.phone,
                 data: [user.phone,user.name]
             }
-        await sendNotification(data);
+        await sendNotification(data,3);
 
         return res.json({success:true});
     }catch(err:any){

@@ -85,7 +85,7 @@ export const meeting_cancelled = async (req: Request, res: Response, next: NextF
             const data: any = {
                 type: "meeting_cancelled",
                 to: phone,
-                data: [firmName, title, formattedDate, reason]
+                data: [firmName, title, formattedDate, reason?`due to ${reason}`:"" ]
             }
             await sendNotification(data);
         }

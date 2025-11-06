@@ -151,7 +151,7 @@ export const MeetingCancelledSchema = z.array( z.object({
         const [day, month, year] = val.split("-");
         return new Date(`${year}-${month}-${day}`);
       }),
-    reason: z.string()
+    reason: z.string().optional()
 }));
 
 

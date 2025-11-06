@@ -375,3 +375,18 @@
 [2025-11-03T19:45:17.714Z] INFO: Shutting down server...
 [2025-11-04T11:51:41.411Z] INFO: Server running on port 3500
 [2025-11-04T11:52:01.257Z] INFO: Shutting down server...
+[2025-11-06T20:23:37.911Z] INFO: Server running on port 3500
+[2025-11-06T20:27:02.086Z] INFO: Job added to queue!
+[2025-11-06T20:27:02.093Z] INFO: ::1 - - [06/Nov/2025:20:27:02 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:27:37.570Z] INFO: Job added to queue!
+[2025-11-06T20:27:37.572Z] INFO: ::1 - - [06/Nov/2025:20:27:37 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:34:57.947Z] INFO: Job added to queue!
+[2025-11-06T20:34:57.949Z] INFO: ::1 - - [06/Nov/2025:20:34:57 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:35:44.783Z] INFO: Job added to queue!
+[2025-11-06T20:35:44.784Z] INFO: ::1 - - [06/Nov/2025:20:35:44 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:35:46.221Z] INFO: ✅ Message sent to 9652314406 — SID: MM1ee07885439cbf4aa485d8884e5b8efd
+[2025-11-06T20:35:46.593Z] INFO: ✅ Job 13 completed
+[2025-11-06T20:36:31.913Z] INFO: Job added to queue!
+[2025-11-06T20:36:31.915Z] INFO: ::1 - - [06/Nov/2025:20:36:31 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:36:32.594Z] INFO: ✅ Message sent to 9652314406 — SID: MMa8630ef0d9d27ff40fbe054118a67988
+[2025-11-06T20:36:32.639Z] INFO: ✅ Job 14 completed
