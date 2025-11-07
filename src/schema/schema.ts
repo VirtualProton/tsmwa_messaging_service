@@ -116,11 +116,10 @@ export const MeetingScheduleSchema = z.array(
         const [day, month, year] = val.split("-");
         return new Date(`${year}-${month}-${day}`);
       }),
-    time: z.string(),
-    location: z.string(),
+    time: z.string().nonempty("Time is required"),
+    location: z.string().nonempty("Location is required"),
     agenda:z.string().optional(),
     note:z.string().optional()
-
   })
 );
 

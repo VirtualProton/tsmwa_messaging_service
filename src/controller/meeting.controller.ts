@@ -10,14 +10,14 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
     try {
         const meetings = MeetingScheduleSchema.parse(req.body);
         for (const { phone, firmName, title, date, time, location, agenda, note } of meetings) {
-            // const today = new Date(date);
-            // const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
+            const today = new Date(date);
+            const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
 
             const notes =
                 (agenda ? `Agenda: ${agenda}` : "") +
                 (note ? `\nNote: ${note}` : "");
 
-
+            console.log( { phone, firmName, title, formattedDate, time, location, agenda, note } );
             const data: any = {
                 type: "meeting_schedule",
                 to: phone,
