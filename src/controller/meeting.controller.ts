@@ -21,7 +21,7 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
             const data: any = {
                 type: "meeting_schedule",
                 to: phone,
-                data: [firmName, title, date, time, location, notes]
+                data: [firmName, title, formattedDate, time, location, notes]
             }
             
             await sendNotification(data);

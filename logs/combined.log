@@ -431,3 +431,9 @@
 [2025-11-07T08:09:34.110Z] INFO: Job added to queue!
 [2025-11-07T08:09:34.117Z] INFO: ::1 - - [07/Nov/2025:08:09:34 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
 [2025-11-07T08:24:35.346Z] INFO: Shutting down server...
+[2025-11-07T08:30:16.783Z] INFO: Server running on port 3500
+[2025-11-07T08:30:21.665Z] INFO: Job added to queue!
+[2025-11-07T08:30:21.673Z] INFO: ::1 - - [07/Nov/2025:08:30:21 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:31:36.696Z] INFO: Server running on port 3500
+[2025-11-07T08:31:37.987Z] INFO: Job added to queue!
+[2025-11-07T08:31:37.993Z] INFO: ::1 - - [07/Nov/2025:08:31:37 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
