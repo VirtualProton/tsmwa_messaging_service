@@ -437,3 +437,27 @@
 [2025-11-07T08:31:36.696Z] INFO: Server running on port 3500
 [2025-11-07T08:31:37.987Z] INFO: Job added to queue!
 [2025-11-07T08:31:37.993Z] INFO: ::1 - - [07/Nov/2025:08:31:37 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:40:35.403Z] INFO: Server running on port 3500
+[2025-11-07T08:40:37.356Z] INFO: Job added to queue!
+[2025-11-07T08:40:37.363Z] INFO: ::1 - - [07/Nov/2025:08:40:37 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:45:47.579Z] INFO: Shutting down server...
+[2025-11-07T08:45:59.627Z] INFO: Server running on port 3500
+[2025-11-07T08:46:11.835Z] INFO: Job added to queue!
+[2025-11-07T08:46:11.841Z] INFO: ::1 - - [07/Nov/2025:08:46:11 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:46:12.508Z] INFO: ✅ Message sent to 9652314406 — SID: MM466cbe649fc8b5f6749e7fc589a5e8e6
+[2025-11-07T08:46:12.568Z] INFO: ✅ Job 22 completed
+[2025-11-07T08:46:54.938Z] INFO: Server running on port 3500
+[2025-11-07T08:47:50.873Z] INFO: Server running on port 3500
+[2025-11-07T08:47:51.312Z] INFO: Job added to queue!
+[2025-11-07T08:47:51.319Z] INFO: ::1 - - [07/Nov/2025:08:47:51 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:47:51.771Z] INFO: ✅ Message sent to 9652314406 — SID: MM1d5fb1c958e0f86ba8b1ac374418394f
+[2025-11-07T08:47:51.802Z] INFO: ✅ Job 23 completed
+[2025-11-07T08:51:44.600Z] INFO: Job added to queue!
+[2025-11-07T08:51:44.601Z] INFO: ::1 - - [07/Nov/2025:08:51:44 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:51:45.420Z] INFO: ✅ Message sent to 9652314406 — SID: MM1e8100832f45ab7c032bfdeb417a17ba
+[2025-11-07T08:51:45.489Z] INFO: ✅ Job 24 completed
+[2025-11-07T08:53:08.507Z] INFO: Job added to queue!
+[2025-11-07T08:53:08.509Z] INFO: ::1 - - [07/Nov/2025:08:53:08 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:53:08.978Z] INFO: ✅ Message sent to 9652314406 — SID: MM5c60965c5f5a315087e12252b242da7d
+[2025-11-07T08:53:09.010Z] INFO: ✅ Job 25 completed
+[2025-11-07T09:05:12.078Z] INFO: Shutting down server...

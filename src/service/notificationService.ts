@@ -4,6 +4,7 @@ const messageQueue = getMessageQueue();
 
 
 export async function sendNotification(data: any, priority?: number) {
+  console.log("Adding job to message queue:", data);
   await messageQueue.add("notification", data, {
     attempts: 5,
     removeOnComplete: true,

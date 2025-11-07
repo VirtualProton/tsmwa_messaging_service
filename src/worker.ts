@@ -14,6 +14,7 @@ const worker = new Worker(
       data: string[];
     };
 
+    console.log({ type, to, data });
     console.log(`📨 Processing job ${job.id} for type: ${type}, to: ${to}`);
 
     const message = await sendWhatsAppMessage(type, `+91${to}`, data);
