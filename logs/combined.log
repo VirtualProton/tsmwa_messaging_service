@@ -390,3 +390,36 @@
 [2025-11-06T20:36:31.915Z] INFO: ::1 - - [06/Nov/2025:20:36:31 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
 [2025-11-06T20:36:32.594Z] INFO: ✅ Message sent to 9652314406 — SID: MMa8630ef0d9d27ff40fbe054118a67988
 [2025-11-06T20:36:32.639Z] INFO: ✅ Job 14 completed
+[2025-11-06T20:42:32.387Z] INFO: Server running on port 3500
+[2025-11-06T20:47:41.820Z] INFO: Job added to queue!
+[2025-11-06T20:47:41.826Z] INFO: ::1 - - [06/Nov/2025:20:47:41 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:48:10.670Z] INFO: Job added to queue!
+[2025-11-06T20:48:10.672Z] INFO: ::1 - - [06/Nov/2025:20:48:10 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:50:02.703Z] INFO: Job added to queue!
+[2025-11-06T20:50:02.704Z] INFO: ::1 - - [06/Nov/2025:20:50:02 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:50:57.563Z] INFO: Job added to queue!
+[2025-11-06T20:50:57.565Z] INFO: ::1 - - [06/Nov/2025:20:50:57 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:51:29.979Z] INFO: Job added to queue!
+[2025-11-06T20:51:29.981Z] INFO: ::1 - - [06/Nov/2025:20:51:29 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:52:06.792Z] INFO: Server running on port 3500
+[2025-11-06T20:52:13.601Z] INFO: Job added to queue!
+[2025-11-06T20:52:13.603Z] INFO: ::1 - - [06/Nov/2025:20:52:13 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:54:19.719Z] INFO: Job added to queue!
+[2025-11-06T20:54:19.720Z] INFO: ::1 - - [06/Nov/2025:20:54:19 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:54:53.029Z] INFO: Job added to queue!
+[2025-11-06T20:54:53.030Z] INFO: ::1 - - [06/Nov/2025:20:54:53 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:57:44.128Z] INFO: Job added to queue!
+[2025-11-06T20:57:44.130Z] INFO: ::1 - - [06/Nov/2025:20:57:44 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T20:59:30.503Z] INFO: Job added to queue!
+[2025-11-06T20:59:30.505Z] INFO: ::1 - - [06/Nov/2025:20:59:30 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T21:02:48.328Z] INFO: Job added to queue!
+[2025-11-06T21:02:48.330Z] INFO: ::1 - - [06/Nov/2025:21:02:48 +0000] "GET /api/welcome?firmName=Pritham&phone=9652314406 HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T21:04:27.446Z] INFO: Job added to queue!
+[2025-11-06T21:04:27.447Z] INFO: ::1 - - [06/Nov/2025:21:04:27 +0000] "GET /api/welcome?firmName=Pritham&phone=9652314406 HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-06T21:07:07.890Z] INFO: Job added to queue!
+[2025-11-06T21:07:07.892Z] INFO: ::1 - - [06/Nov/2025:21:07:07 +0000] "GET /api/welcome?firmName=Pritham&phone=9652314406 HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[2025-11-06T21:07:07.989Z] INFO: ::1 - - [06/Nov/2025:21:07:07 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3500/api/welcome?firmName=Pritham&phone=9652314406" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[2025-11-06T21:08:02.216Z] INFO: Job added to queue!
+[2025-11-06T21:08:02.218Z] INFO: ::1 - - [06/Nov/2025:21:08:02 +0000] "GET /api/welcome?firmName=Pritham&phone=9652314406 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[2025-11-06T21:08:03.775Z] INFO: Job added to queue!
+[2025-11-06T21:08:03.777Z] INFO: ::1 - - [06/Nov/2025:21:08:03 +0000] "GET /api/welcome?firmName=Pritham&phone=9652314406 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"

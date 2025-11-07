@@ -10,8 +10,8 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
     try {
         const meetings = MeetingScheduleSchema.parse(req.body);
         for (const { phone, firmName, title, date, time, location, agenda, note } of meetings) {
-            const today = new Date(date);
-            const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
+            // const today = new Date(date);
+            // const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
 
             const notes =
                 (agenda ? `Agenda: ${agenda}` : "") +
@@ -21,7 +21,7 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
             const data: any = {
                 type: "meeting_schedule",
                 to: phone,
-                data: [firmName, title, formattedDate, time, location, notes]
+                data: [firmName, title, date, time, location, notes]
             }
             
             await sendNotification(data);
@@ -82,10 +82,11 @@ export const meeting_cancelled = async (req: Request, res: Response, next: NextF
         for (const { phone, firmName, title, date, reason } of meetings) {
             const today = new Date(date);
             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
+            const reasonText = reason ? `due to ${reason}` : ""; // always string, may be empty
             const data: any = {
                 type: "meeting_cancelled",
                 to: phone,
-                data: [firmName, title, formattedDate, reason?`due to ${reason}`:"" ]
+                data: [firmName, title, formattedDate, reason?`due to ${reasonText}`:"" ]
             }
             await sendNotification(data);
         }
