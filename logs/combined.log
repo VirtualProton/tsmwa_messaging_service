@@ -355,3 +355,12 @@
 [2025-11-03T14:10:41.301Z] INFO: ✅ Message sent to 9652314406 — SID: MM78e5e5265a820a02518ed538d422d28d
 [2025-11-03T14:10:41.388Z] INFO: ✅ Job 8 completed
 [2025-11-03T14:11:51.605Z] INFO: Shutting down server...
+[2025-11-07T08:33:24.306Z] INFO: Server running on port 3500
+[2025-11-07T08:34:10.353Z] INFO: Server running on port 3500
+[2025-11-07T08:34:34.534Z] INFO: Job added to queue!
+[2025-11-07T08:34:34.541Z] INFO: ::1 - - [07/Nov/2025:08:34:34 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:35:35.556Z] INFO: Job added to queue!
+[2025-11-07T08:35:35.558Z] INFO: ::1 - - [07/Nov/2025:08:35:35 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-07T08:35:36.814Z] INFO: ✅ Message sent to 9652314406 — SID: MMc8f17abe925207557cf9675cce2f46cf
+[2025-11-07T08:35:36.871Z] INFO: ✅ Job 20 completed
+[2025-11-07T08:37:25.409Z] INFO: Shutting down server...

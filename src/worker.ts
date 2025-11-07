@@ -14,8 +14,9 @@ const worker = new Worker(
       data: string[];
     };
 
-    console.log(`📨 Processing job ${job.id} for type: ${type}, to: ${to}`);
 
+    console.log(`📨 Processing job ${job.id} for type: ${type}, to: ${to}`);
+    console.log(`Data: ${JSON.stringify(data)}`);
     const message = await sendWhatsAppMessage(type, `+91${to}`, data);
 
     logger.info(`✅ Message sent to ${to} — SID: ${message.sid}`);
