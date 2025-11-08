@@ -42,22 +42,13 @@ export const PaymentReceived = async (req: Request, res: Response, next: NextFun
     console.log("🔔 PaymentReceived Controller accessed");
 
     try {
-        const { phone, firmName, amount, reason, date } = PaymentRecievedSchema.parse(req.body);
+        const { phone,firmName, fromDate, toDate, receivedAmount, totalReceivedAmount, dueAmount, netAmount } = PaymentRecievedSchema.parse(req.body);
 
-        const formattedToday = date
-            .toLocaleDateString("en-GB")  // gives dd/mm/yyyy
-            .replace(/\//g, "-");         // convert slashes to dashes
-
-
-        // console.log("✅ PaymentReceived Controller accessed with phone:", phone, "and amount:", amount);
-        // const result = await sendWhatsAppMessage("payment_received", `+91${phone}`, [firmName, amount, reason, formattedToday]);
-
-        // return res.status(200).json({ success: true, result });
 
         const data: any = {
             type: "payment_received",
             to: phone,
-            data: [firmName, amount, reason, formattedToday]
+            data: [firmName, fromDate, toDate, receivedAmount, totalReceivedAmount, dueAmount, netAmount]
         }
         await sendNotification(data,2);
         return res.status(200).json({ success: true });
@@ -75,6 +66,7 @@ export const PaymentReceived = async (req: Request, res: Response, next: NextFun
         });
     }
 }
+
 
 export const PartialPaymentReceived = async (req: Request, res: Response, next: NextFunction) => {
 

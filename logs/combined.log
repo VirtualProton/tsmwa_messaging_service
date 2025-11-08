@@ -461,3 +461,13 @@
 [2025-11-07T08:53:08.978Z] INFO: ✅ Message sent to 9652314406 — SID: MM5c60965c5f5a315087e12252b242da7d
 [2025-11-07T08:53:09.010Z] INFO: ✅ Job 25 completed
 [2025-11-07T09:05:12.078Z] INFO: Shutting down server...
+[2025-11-08T17:40:52.343Z] INFO: Server running on port 3500
+[2025-11-08T17:41:41.952Z] INFO: ::1 - - [08/Nov/2025:17:41:41 +0000] "POST / HTTP/1.1" 404 140 "-" "PostmanRuntime/7.39.1"
+[2025-11-08T17:41:47.522Z] INFO: ::1 - - [08/Nov/2025:17:41:47 +0000] "GET / HTTP/1.1" 200 48 "-" "PostmanRuntime/7.39.1"
+[2025-11-08T17:42:58.205Z] INFO: Job added to queue with priority 2!
+[2025-11-08T17:42:58.207Z] INFO: ::1 - - [08/Nov/2025:17:42:58 +0000] "POST /api/payment_received HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-08T17:42:59.031Z] INFO: ✅ Message sent to 9876543210 — SID: MM6f1b0bbac69b75f0b594a57baff35118
+[2025-11-08T17:42:59.076Z] INFO: ✅ Job 1 completed
+[2025-11-08T17:43:14.452Z] INFO: Job added to queue with priority 2!
+[2025-11-08T17:43:14.454Z] INFO: ::1 - - [08/Nov/2025:17:43:14 +0000] "POST /api/payment_received HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-08T17:47:26.733Z] INFO: Shutting down server...
