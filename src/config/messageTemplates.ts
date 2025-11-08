@@ -21,7 +21,7 @@ export const WhatsAppTemplates = {
 
   payment_received: {
     templateSid: PAYMENT_RECEIVED_TEMPLATE_ID,
-    variables: (firmName:string, amount: string, reason:string, date: string) => [firmName,amount,reason, date],
+    variables: (firmName:string, fromDate:string, toDate:string, receivedAmount:string, totalReceivedAmount:string, dueAmount:string, netAmount:string ) => [firmName, fromDate, toDate, receivedAmount, totalReceivedAmount, dueAmount, netAmount ],
   },
 
   payment_remainder: {
