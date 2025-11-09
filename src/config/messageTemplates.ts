@@ -1,25 +1,31 @@
-import { MEETING_CANCELLED_TEMPLATE_ID, MEETING_REMINDER_TEMPLATE_ID, MEETING_SCHEDULED_TEMPLATE_ID, MEMBERSHIP_ACTIVATION_TEMPLATE_ID, MEMBERSHIP_EXPIRED_NOTIFICATION_TEMPLATE_ID, MEMBERSHIP_EXPIRY_REMAINDER_TEMPLATE_ID, NEW_USER_TEMPLATE_ID, OTP_TEMPLATE_ID, PARTIAL_PAYMENT_TEMPLATE_ID, PAYMENT_RECEIVED_TEMPLATE_ID, PAYMENT_REMINDER_TEMPLATE_ID, WELCOME_TEMPLATE_ID } from "../secrets";
+import { BILL_GENERATED_TEMPLATE_ID, MEETING_CANCELLED_TEMPLATE_ID, MEETING_REMINDER_TEMPLATE_ID, MEETING_SCHEDULED_TEMPLATE_ID, MEMBERSHIP_ACTIVATION_TEMPLATE_ID, MEMBERSHIP_EXPIRED_NOTIFICATION_TEMPLATE_ID, MEMBERSHIP_EXPIRY_REMAINDER_TEMPLATE_ID, NEW_USER_TEMPLATE_ID, OTP_TEMPLATE_ID, PARTIAL_PAYMENT_TEMPLATE_ID, PAYMENT_RECEIVED_TEMPLATE_ID, PAYMENT_REMINDER_TEMPLATE_ID, WELCOME_TEMPLATE_ID } from "../secrets";
 
 export const WhatsAppTemplates = {
-  otp: {   //Complated
+  otp: {   //done
     templateSid: OTP_TEMPLATE_ID, // Twilio Content SID
     variables: (otp: string) => [otp],
   },
 
-  welcome: { //---
+  welcome: { //done
     templateSid: WELCOME_TEMPLATE_ID,
     variables: (firmName: string) => [firmName],
   },
-  new_user:{
+  new_user:{ //done
     templateSid:NEW_USER_TEMPLATE_ID,
     variables:(phone:string, name:string, url="https://app.tsmwa.online") => [name,phone,url]
   },
-  partial_payment:{ //----
-    templateSid: PARTIAL_PAYMENT_TEMPLATE_ID,
-    variables: (firmName:string, paidAmount: string, dueAmount:string, dueDate: string) => [firmName,paidAmount,dueAmount,dueDate],
+
+  bill_generated:{//done
+    templateSid: BILL_GENERATED_TEMPLATE_ID,
+    variables: (firmName:string, fromDate:string, toDate:string, amount:string) => [firmName, fromDate, toDate, amount],
   },
 
-  payment_received: {
+  // partial_payment:{ //----
+  //   templateSid: PARTIAL_PAYMENT_TEMPLATE_ID,
+  //   variables: (firmName:string, paidAmount: string, dueAmount:string, dueDate: string) => [firmName,paidAmount,dueAmount,dueDate],
+  // },
+
+  payment_received: { //done
     templateSid: PAYMENT_RECEIVED_TEMPLATE_ID,
     variables: (firmName:string, fromDate:string, toDate:string, receivedAmount:string, totalReceivedAmount:string, dueAmount:string, netAmount:string ) => [firmName, fromDate, toDate, receivedAmount, totalReceivedAmount, dueAmount, netAmount ],
   },

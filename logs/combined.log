@@ -471,3 +471,21 @@
 [2025-11-08T17:43:14.452Z] INFO: Job added to queue with priority 2!
 [2025-11-08T17:43:14.454Z] INFO: ::1 - - [08/Nov/2025:17:43:14 +0000] "POST /api/payment_received HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
 [2025-11-08T17:47:26.733Z] INFO: Shutting down server...
+[2025-11-08T17:53:27.828Z] INFO: Server running on port 3500
+[2025-11-08T17:53:29.313Z] INFO: Job added to queue with priority 2!
+[2025-11-08T17:53:29.318Z] INFO: ::1 - - [08/Nov/2025:17:53:29 +0000] "POST /api/payment_received HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-08T17:53:30.509Z] INFO: ✅ Message sent to 9652314406 — SID: MM8503b1eed968072f5291f6041fdfc461
+[2025-11-08T17:53:30.567Z] INFO: ✅ Job 3 completed
+[2025-11-08T17:55:29.197Z] INFO: Server running on port 3500
+[2025-11-08T17:55:32.149Z] INFO: Job added to queue with priority 2!
+[2025-11-08T17:55:32.157Z] INFO: ::1 - - [08/Nov/2025:17:55:32 +0000] "POST /api/payment_received HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-08T17:55:33.013Z] INFO: ✅ Message sent to 9652314406 — SID: MMa572ab1662e8e5a7236351400203cdcb
+[2025-11-08T17:55:33.042Z] INFO: ✅ Job 4 completed
+[2025-11-08T17:58:09.977Z] INFO: Server running on port 3500
+[2025-11-08T17:58:14.464Z] INFO: Job added to queue with priority 2!
+[2025-11-08T17:58:14.470Z] INFO: ::1 - - [08/Nov/2025:17:58:14 +0000] "POST /api/payment_received HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-08T17:58:15.313Z] INFO: ✅ Message sent to 9652314406 — SID: MMaba9529191171eb5fbf162b026cfed27
+[2025-11-08T17:58:15.341Z] INFO: ✅ Job 5 completed
+[2025-11-09T04:07:51.649Z] INFO: ✅ Message sent to 9078569678 — SID: MM2ca0963efd5f0d1fdd5af2c4de09200c
+[2025-11-09T04:07:51.735Z] INFO: ✅ Job 1 completed
+[2025-11-09T04:28:08.149Z] INFO: Shutting down server...

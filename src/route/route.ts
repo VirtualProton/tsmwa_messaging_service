@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { Otp } from "../controller/Otp.Controller";
 import { welcome } from "../controller/welcome.Controller";
-import { PartialPaymentReceived, PaymentReceived, PaymentRemainder } from "../controller/Payment.Controller";
+import {  PaymentReceived, PaymentRemainder } from "../controller/Payment.Controller";
 import { membership_activation_reminder, membership_expired_reminder, membership_expiry_reminder } from "../controller/membership.controller";
 import { meeting_cancelled, meeting_reminder, meeting_schedule } from "../controller/meeting.controller";
 import { newUser } from "../controller/user.controller";
@@ -15,7 +15,7 @@ rootRouter.get("/welcome", welcome)
 rootRouter.post("/new_user",newUser)
 
 rootRouter.post("/payment_received", PaymentReceived);
-rootRouter.post("/partial_Payment_received",PartialPaymentReceived);
+// rootRouter.post("/partial_Payment_received",PartialPaymentReceived);
 rootRouter.post("/payment_remainder",PaymentRemainder);
 
 

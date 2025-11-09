@@ -29,24 +29,45 @@ export const PaymentRemainderSchema = z.object({
         }),
 });
 
+export const BillGeneratedSchema = z.object({
+    phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
+    firmName: z.string().nonempty("Firm name is required"),
+    fromDate: z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
+        // .transform((val) => {
+        //     const [day, month, year] = val.split("-");
+        //     return new Date(`${year}-${month}-${day}`);
+        // }),
+
+    toDate: z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
+        // .transform((val) => {
+        //     const [day, month, year] = val.split("-");
+        //     return new Date(`${year}-${month}-${day}`);
+        // }),   
+    amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
+});
+
 export const PaymentRecievedSchema = z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string().nonempty("Firm name is required"),
     fromDate: z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-        .transform((val) => {
-            const [day, month, year] = val.split("-");
-            return new Date(`${year}-${month}-${day}`);
-        }),
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
+        // .transform((val) => {
+        //     const [day, month, year] = val.split("-");
+        //     return new Date(`${year}-${month}-${day}`);
+        // }),
 
     toDate: z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-        .transform((val) => {
-            const [day, month, year] = val.split("-");
-            return new Date(`${year}-${month}-${day}`);
-        }),   
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
+        // .transform((val) => {
+        //     const [day, month, year] = val.split("-");
+        //     return new Date(`${year}-${month}-${day}`);
+        // }),   
     receivedAmount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
     totalReceivedAmount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
     dueAmount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
