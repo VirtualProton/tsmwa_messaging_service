@@ -489,3 +489,180 @@
 [2025-11-09T04:07:51.649Z] INFO: ✅ Message sent to 9078569678 — SID: MM2ca0963efd5f0d1fdd5af2c4de09200c
 [2025-11-09T04:07:51.735Z] INFO: ✅ Job 1 completed
 [2025-11-09T04:28:08.149Z] INFO: Shutting down server...
+[2025-11-09T15:42:31.150Z] INFO: Server running on port 3500
+[2025-11-09T15:43:54.717Z] INFO: Server running on port 3500
+[2025-11-09T15:44:13.158Z] INFO: Server running on port 3500
+[2025-11-09T15:45:55.084Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:45:55.092Z] INFO: ::1 - - [09/Nov/2025:15:45:55 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T15:46:56.025Z] INFO: Server running on port 3500
+[2025-11-09T15:46:59.983Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:46:59.991Z] INFO: ::1 - - [09/Nov/2025:15:46:59 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T15:56:56.805Z] INFO: Server running on port 3500
+[2025-11-09T15:57:01.006Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:57:01.008Z] INFO: ::1 - - [09/Nov/2025:15:57:01 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T15:57:44.902Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:57:44.903Z] INFO: ::1 - - [09/Nov/2025:15:57:44 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T15:57:47.528Z] INFO: Shutting down server...
+[2025-11-09T15:57:56.056Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:57:56.058Z] INFO: ::1 - - [09/Nov/2025:15:57:56 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T15:57:58.061Z] INFO: Server running on port 3500
+[2025-11-09T15:58:01.602Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:58:01.604Z] INFO: ::1 - - [09/Nov/2025:15:58:01 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T15:58:04.464Z] INFO: Shutting down server...
+[2025-11-09T15:58:11.029Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:58:11.030Z] INFO: ::1 - - [09/Nov/2025:15:58:11 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T15:58:29.634Z] INFO: Shutting down server...
+[2025-11-09T15:58:48.030Z] INFO: Server running on port 3500
+[2025-11-09T15:58:51.211Z] INFO: Job added to queue with priority 1!
+[2025-11-09T15:58:51.217Z] INFO: ::1 - - [09/Nov/2025:15:58:51 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:05:19.460Z] INFO: Server running on port 3500
+[2025-11-09T16:05:24.622Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:05:24.629Z] INFO: ::1 - - [09/Nov/2025:16:05:24 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:07:01.863Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:07:01.865Z] INFO: ::1 - - [09/Nov/2025:16:07:01 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:11:58.668Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:11:58.670Z] INFO: ::1 - - [09/Nov/2025:16:11:58 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:12:55.141Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:12:55.143Z] INFO: ::1 - - [09/Nov/2025:16:12:55 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:15:00.649Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:15:00.650Z] INFO: ::1 - - [09/Nov/2025:16:15:00 +0000] "POST /api/bill_generated HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:17:44.091Z] ERROR: ❌ Error in welcome controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "phone"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "phone"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-09T16:17:44.093Z] INFO: ::1 - - [09/Nov/2025:16:17:44 +0000] "GET /api/welcome HTTP/1.1" 400 414 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:20:02.999Z] INFO: Server running on port 3500
+[2025-11-09T16:20:05.284Z] INFO: ::1 - - [09/Nov/2025:16:20:05 +0000] "POST /api/welcome HTTP/1.1" 404 151 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:20:27.092Z] INFO: Server running on port 3500
+[2025-11-09T16:20:28.609Z] INFO: Job added to queue!
+[2025-11-09T16:20:28.617Z] INFO: ::1 - - [09/Nov/2025:16:20:28 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:22:25.479Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:22:25.481Z] INFO: ::1 - - [09/Nov/2025:16:22:25 +0000] "POST /api/otp HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:27:10.235Z] INFO: Job added to queue!
+[2025-11-09T16:27:10.237Z] INFO: ::1 - - [09/Nov/2025:16:27:10 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:29:18.861Z] INFO: Job added to queue!
+[2025-11-09T16:29:18.863Z] INFO: ::1 - - [09/Nov/2025:16:29:18 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:35:45.814Z] INFO: Server running on port 3500
+[2025-11-09T16:35:46.585Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:35:46.591Z] INFO: ::1 - - [09/Nov/2025:16:35:46 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:39:25.662Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:39:25.664Z] INFO: ::1 - - [09/Nov/2025:16:39:25 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:47:21.810Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:47:21.812Z] INFO: ::1 - - [09/Nov/2025:16:47:21 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:48:14.184Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:48:14.185Z] INFO: ::1 - - [09/Nov/2025:16:48:14 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T16:55:16.362Z] INFO: Job added to queue with priority 1!
+[2025-11-09T16:55:16.364Z] INFO: ::1 - - [09/Nov/2025:16:55:16 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:52:32.372Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:52:32.376Z] INFO: ::1 - - [09/Nov/2025:17:52:32 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:53:18.981Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:53:18.982Z] INFO: ::1 - - [09/Nov/2025:17:53:18 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:54:21.227Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:54:21.229Z] INFO: ::1 - - [09/Nov/2025:17:54:21 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:56:31.240Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:56:31.242Z] INFO: ::1 - - [09/Nov/2025:17:56:31 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:57:13.058Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:57:13.059Z] INFO: ::1 - - [09/Nov/2025:17:57:13 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:58:14.967Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:58:14.969Z] INFO: ::1 - - [09/Nov/2025:17:58:14 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:58:35.347Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:58:35.348Z] INFO: ::1 - - [09/Nov/2025:17:58:35 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:58:54.552Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:58:54.554Z] INFO: ::1 - - [09/Nov/2025:17:58:54 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T17:59:25.308Z] INFO: Job added to queue with priority 1!
+[2025-11-09T17:59:25.310Z] INFO: ::1 - - [09/Nov/2025:17:59:25 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T18:00:29.519Z] INFO: Job added to queue with priority 1!
+[2025-11-09T18:00:29.521Z] INFO: ::1 - - [09/Nov/2025:18:00:29 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T18:11:37.678Z] ERROR: ❌ Error in Otp controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "otp"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "otp"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-09T18:11:37.689Z] INFO: ::1 - - [09/Nov/2025:18:11:37 +0000] "POST /api/otp HTTP/1.1" 400 219 "-" "PostmanRuntime/7.39.1"
+[2025-11-09T18:11:45.916Z] INFO: Job added to queue with priority 1!
+[2025-11-09T18:11:45.918Z] INFO: ::1 - - [09/Nov/2025:18:11:45 +0000] "POST /api/otp HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-11T09:47:30.685Z] INFO: Server running on port 3500
+[2025-11-11T09:47:46.071Z] INFO: Job added to queue with priority 1!
+[2025-11-11T09:47:46.078Z] INFO: ::1 - - [11/Nov/2025:09:47:46 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-11T09:48:27.857Z] INFO: Job added to queue with priority 1!
+[2025-11-11T09:48:27.859Z] INFO: ::1 - - [11/Nov/2025:09:48:27 +0000] "POST /api/welcome HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-11T17:16:51.590Z] INFO: Shutting down server...
+[2025-11-12T19:04:53.135Z] INFO: Server running on port 3500
+[2025-11-12T19:06:09.867Z] ERROR: ❌ Error in welcome controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-12T19:06:09.878Z] INFO: ::1 - - [12/Nov/2025:19:06:09 +0000] "GET /api/userconsent?phone=9652314406 HTTP/1.1" 400 224 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2025-11-12T19:06:09.948Z] INFO: ::1 - - [12/Nov/2025:19:06:09 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3500/api/userconsent?phone=9652314406" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2025-11-12T19:06:33.486Z] INFO: Server running on port 3500
+[2025-11-12T19:06:34.804Z] INFO: Job added to queue with priority 1!
+[2025-11-12T19:06:34.812Z] INFO: ::1 - - [12/Nov/2025:19:06:34 +0000] "GET /api/userconsent?phone=9652314406 HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2025-11-12T19:14:32.831Z] INFO: ::1 - - [12/Nov/2025:19:14:32 +0000] "GET /api/userconsent?phone=9652314406 HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2025-11-12T19:14:36.299Z] INFO: ::1 - - [12/Nov/2025:19:14:36 +0000] "GET /api/userconsent?phone=9652314406 HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2025-11-12T19:14:37.281Z] INFO: Job added to queue with priority 1!
+[2025-11-12T19:14:37.282Z] INFO: Job added to queue with priority 1!
+[2025-11-12T19:16:33.541Z] INFO: Server running on port 3500
+[2025-11-12T19:16:35.191Z] INFO: Job added to queue with priority 1!
+[2025-11-12T19:16:35.200Z] INFO: ::1 - - [12/Nov/2025:19:16:35 +0000] "GET /api/userconsent?phone=9652314406 HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2025-11-12T19:17:24.293Z] INFO: Job added to queue with priority 1!
+[2025-11-12T19:17:24.294Z] INFO: ::1 - - [12/Nov/2025:19:17:24 +0000] "GET /api/userconsent?phone=8247542367 HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"

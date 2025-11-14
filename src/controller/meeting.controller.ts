@@ -6,22 +6,16 @@ import { sendNotification } from "../service/notificationService";
 // import { Request } from "../types/express";
 
 export const meeting_schedule = async (req: Request, res: Response, next: NextFunction) => {
-    console.log("meeting_schedule")
     try {
         const meetings = MeetingScheduleSchema.parse(req.body);
         for (const { phone, firmName, title, date, time, location, agenda, note } of meetings) {
             const today = new Date(date);
             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
 
-            const notes =
-                (agenda ? `Agenda: ${agenda}` : "") +
-                (note ? `\nNote: ${note}` : "");
-
-            console.log( { phone, firmName, title, formattedDate, time, location, agenda, note } );
             const data: any = {
-                type: "meeting_schedule",
+                type: "schedule_meeeting",
                 to: phone,
-                data: [firmName, title, formattedDate, time, location, notes]
+                data: [firmName, title, formattedDate, time, location, agenda, note? `Note:${note}`:""]
             }
             
             await sendNotification(data);
@@ -44,35 +38,35 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
 
 
 
-export const meeting_reminder = async (req: Request, res: Response, next: NextFunction) => {
-    // console.log("meeting_schedule")
-    try {
-        const meetings = MeetingReminderSchema.parse(req.body);
-        for (const { phone, firmName, title, date, time, location, starts_in } of meetings) {
-            const today = new Date(date);
-            const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
-            const data: any = {
-                type: "meeting_reminder",
-                to: phone,
-                data: [firmName, title, formattedDate, time, location, starts_in]
-            }
-            await sendNotification(data);
-        }
+// export const meeting_reminder = async (req: Request, res: Response, next: NextFunction) => {
+//     // console.log("meeting_schedule")
+//     try {
+//         const meetings = MeetingReminderSchema.parse(req.body);
+//         for (const { phone, firmName, title, date, time, location, starts_in } of meetings) {
+//             const today = new Date(date);
+//             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
+//             const data: any = {
+//                 type: "meeting_reminder",
+//                 to: phone,
+//                 data: [firmName, title, formattedDate, time, location, starts_in]
+//             }
+//             await sendNotification(data);
+//         }
 
-        return res.status(200).json({ success: true });
-    } catch (err) {
-        if (err instanceof Error) {
-            logger.error(`❌ Error in meeting_reminder controller: ${err.message}`, err);
-        } else {
-            logger.error(`❌ Error in meeting_reminder controller: ${JSON.stringify(err)}`);
-        }
+//         return res.status(200).json({ success: true });
+//     } catch (err) {
+//         if (err instanceof Error) {
+//             logger.error(`❌ Error in meeting_reminder controller: ${err.message}`, err);
+//         } else {
+//             logger.error(`❌ Error in meeting_reminder controller: ${JSON.stringify(err)}`);
+//         }
 
-        return res.status(400).json({
-            success: false,
-            error: err instanceof Error ? err.message : "An unknown error occurred"
-        });
-    }
-}
+//         return res.status(400).json({
+//             success: false,
+//             error: err instanceof Error ? err.message : "An unknown error occurred"
+//         });
+//     }
+// }
 
 
 export const meeting_cancelled = async (req: Request, res: Response, next: NextFunction) => {
@@ -84,7 +78,7 @@ export const meeting_cancelled = async (req: Request, res: Response, next: NextF
             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
             const reasonText = reason ? `due to ${reason}` : ""; // always string, may be empty
             const data: any = {
-                type: "meeting_cancelled",
+                type: "cancel_meeting",
                 to: phone,
                 data: [firmName, title, formattedDate, reason?`due to ${reasonText}`:"" ]
             }

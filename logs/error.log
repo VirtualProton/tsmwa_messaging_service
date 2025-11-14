@@ -221,3 +221,77 @@
 [2025-11-03T07:50:31.876Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
 [2025-11-03T07:50:32.342Z] ERROR: ❌ Job 1 failed: The 'To' number whatsapp:9652314406 is not a valid phone number.
 [2025-11-03T14:01:54.375Z] ERROR: ❌ Job 1 failed: ❌ No template found for type: NEW_USER_TEMPLATE_ID
+[2025-11-09T15:57:56.255Z] ERROR: ❌ Job 16 failed: ❌ No template found for type: bill_generated
+[2025-11-09T16:17:44.091Z] ERROR: ❌ Error in welcome controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "phone"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "phone"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-09T18:11:37.678Z] ERROR: ❌ Error in Otp controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "otp"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "otp"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-12T19:06:09.867Z] ERROR: ❌ Error in welcome controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "firmName"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]

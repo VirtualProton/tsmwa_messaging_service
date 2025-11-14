@@ -10,23 +10,30 @@ export const NewUser = z.object({
     name: z.string()
 });
 
-export const WelcomeSchema = z.object({
+export const MemberSignConfirmationSchema = z.object({
+    phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string(),
-    phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits")
+    membershipId: z.string()
 });
 
 export const PaymentRemainderSchema = z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string().max(100),
-    amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
-    reason: z.string(),
-    dueDate:  z
+    fromDate:  z
         .string()
         .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
         .transform((val) => {
             const [day, month, year] = val.split("-");
             return new Date(`${year}-${month}-${day}`);
         }),
+    toDate:  z
+        .string()
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
+        .transform((val) => {
+            const [day, month, year] = val.split("-");
+            return new Date(`${year}-${month}-${day}`);
+        }),
+    amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format")
 });
 
 export const BillGeneratedSchema = z.object({
