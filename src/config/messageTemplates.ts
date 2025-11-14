@@ -1,79 +1,51 @@
-import { MEETING_CANCELLED_TEMPLATE_ID, MEETING_REMINDER_TEMPLATE_ID, MEETING_SCHEDULED_TEMPLATE_ID, MEMBERSHIP_ACTIVATION_TEMPLATE_ID, MEMBERSHIP_EXPIRED_NOTIFICATION_TEMPLATE_ID, MEMBERSHIP_EXPIRY_REMAINDER_TEMPLATE_ID, NEW_USER_TEMPLATE_ID, OTP_TEMPLATE_ID, PARTIAL_PAYMENT_TEMPLATE_ID, PAYMENT_RECEIVED_TEMPLATE_ID, PAYMENT_REMINDER_TEMPLATE_ID, WELCOME_TEMPLATE_ID } from "../secrets";
+import { MEETING_CANCEL_TEMPLATE_ID, MEETING_SCHEDULE_TEMPLATE_ID, MEETING_UPDATE_TEMPLATE_ID, MEMBER_SIGNUP_CONFIRMATION_TEMPLATE_ID, MEMBERSHIP_ACTIVATION_TEMPLATE_ID, MEMBERSHIP_BILL_GENERATED_TEMPLATE_ID, NEW_USER_TEMPLATE_ID, OTP_TEMPLATE_ID, PAYMENT_RECEIVED_TEMPLATE_ID, PAYMENT_REMINDER_TEMPLATE_ID } from "../secrets";
+
+console.table({
+  OTP_TEMPLATE_ID,
+  MEMBER_SIGNUP_CONFIRMATION_TEMPLATE_ID
+});
 
 export const WhatsAppTemplates = {
-  otp: {   //Complated
+  otp: {   //working
     templateSid: OTP_TEMPLATE_ID, // Twilio Content SID
     variables: (otp: string) => [otp],
   },
-
-  welcome: { //---
-    templateSid: WELCOME_TEMPLATE_ID,
-    variables: (firmName: string) => [firmName],
+  new_user: { //done
+    templateSid: NEW_USER_TEMPLATE_ID,
+    variables: (phone: string, name: string, url = "https://app.tsmwa.online") => [name, phone, url]
   },
-  new_user:{
-    templateSid:NEW_USER_TEMPLATE_ID,
-    variables:(phone:string, name:string, url="https://app.tsmwa.online") => [name,phone,url]
-  },
-  partial_payment:{ //----
-    templateSid: PARTIAL_PAYMENT_TEMPLATE_ID,
-    variables: (firmName:string, paidAmount: string, dueAmount:string, dueDate: string) => [firmName,paidAmount,dueAmount,dueDate],
+  member_signup_confirmation: { //done
+    templateSid: MEMBER_SIGNUP_CONFIRMATION_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, membershipId:string) => [firmName, membershipId]
   },
 
-  payment_received: {
-    templateSid: PAYMENT_RECEIVED_TEMPLATE_ID,
-    variables: (firmName:string, fromDate:string, toDate:string, receivedAmount:string, totalReceivedAmount:string, dueAmount:string, netAmount:string ) => [firmName, fromDate, toDate, receivedAmount, totalReceivedAmount, dueAmount, netAmount ],
+  membership_activation: { //done
+    templateSid: MEMBERSHIP_ACTIVATION_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, fromDate:string, toDate:string) => [firmName, fromDate, toDate],
   },
 
-  payment_remainder: {
-    templateSid: PAYMENT_REMINDER_TEMPLATE_ID,
-    variables: (firmName: string, amount: string,reason:string, dueDate: string, ) => [firmName,amount,reason, dueDate],
+  membership_bill_generated: { //done
+    templateSid: MEMBERSHIP_BILL_GENERATED_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, fromDate:string, toDate:string, amount:string) => [firmName, fromDate, toDate, amount],
   },
-
-
-  meeting_schedule: {
-    templateSid: MEETING_SCHEDULED_TEMPLATE_ID,
-    variables: (firmName:string, title: string, date: string, time: string, location: string, note:string) => [
-      firmName,
-      title,
-      date,
-      time,
-      location,
-      note
-    ],
+  payment_reminder:{ //done
+    templateSid: PAYMENT_REMINDER_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, fromDate:string, toDate:string, amount:string) => [firmName, fromDate, toDate,amount],
   },
-
-
-  meeting_reminder: {
-    templateSid: MEETING_REMINDER_TEMPLATE_ID,
-    variables: (firmName:string, title: string, date: string, time: string, location: string, startsIn:string) => [
-      firmName, title, date, time, location, startsIn
-    ],
+  payment_received:{//done
+    templateSid: PAYMENT_RECEIVED_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, fromDate:string, toDate:string, receivedAmount:string, totalReceivedAmount:string, dueAmount:string, netAmount:string) => [firmName, fromDate, toDate,receivedAmount, totalReceivedAmount, dueAmount, netAmount],
   },
-
-  meeting_cancelled: {
-    templateSid: MEETING_CANCELLED_TEMPLATE_ID,
-    variables: (firmName:string,title: string, date: string, resason:string) => [firmName,title,date,resason],
+  schedule_meeeting: {
+    templateSid: MEETING_SCHEDULE_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, title:string, date:string, time:string, location:string, agenda:string, note:string) => [firmName, title, date, time, location, agenda, note]
   },
-
-
-
-  
-  membership_expiry:{
-    templateSid: MEMBERSHIP_EXPIRY_REMAINDER_TEMPLATE_ID,
-    variables: (firmName:string,date: string, contact:string) => [firmName,date,contact],
+  cancel_meeting: {
+    templateSid: MEETING_CANCEL_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, title:string, date:string, reason:string) => [firmName, title, date, reason]
   },
-
-  membership_expired:{
-     templateSid: MEMBERSHIP_EXPIRED_NOTIFICATION_TEMPLATE_ID,
-    variables: (firmName:string,date: string, contact:string) => [firmName,date,contact],
-  },
-  membership_activation:{
-     templateSid: MEMBERSHIP_ACTIVATION_TEMPLATE_ID,
-    variables: (firmName:string,fromDate: string, toDate:string) => [firmName,fromDate,toDate],
-  },
-  // membership_declined:{
-  //    templateSid: MEMBERSHIP_ACTIVATION_TEMPLATE_ID,
-  //   variables: (firmName:string,fromDate: string, toDate:string) => [firmName,fromDate,toDate],
-  // },
-
+  update_meeting: {
+    templateSid: MEETING_UPDATE_TEMPLATE_ID, // Twilio Content SID
+    variables: (firmName:string, title:string, date:string, time:string, location:string, agenda:string, note:string) => [firmName, title, date, time, location, agenda, note]
+  }
 };

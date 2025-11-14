@@ -2,9 +2,10 @@ import { Worker } from "bullmq";
 import { getIORedisConnection } from "./utils/messageQueue";
 import { sendWhatsAppMessage } from "./service/whatsappService";
 import logger from "./utils/logger";
+import { getTwilioClient } from "./utils/TwilioClient";
 
 const connection = getIORedisConnection();
-
+const client = getTwilioClient();
 const worker = new Worker(
   "messageQueue",
   async (job) => {
@@ -17,9 +18,12 @@ const worker = new Worker(
 
     console.log(`📨 Processing job ${job.id} for type: ${type}, to: ${to}`);
     console.log(`Data: ${JSON.stringify(data)}`);
+
     const message = await sendWhatsAppMessage(type, `+91${to}`, data);
 
     logger.info(`✅ Message sent to ${to} — SID: ${message.sid}`);
+    const msg = await client.messages(message.sid).fetch();
+    console.log(msg);
   },
   { connection }
 );
