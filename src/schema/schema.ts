@@ -19,20 +19,14 @@ export const MemberSignConfirmationSchema = z.object({
 export const PaymentRemainderSchema = z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string().max(100),
+
     fromDate:  z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-        .transform((val) => {
-            const [day, month, year] = val.split("-");
-            return new Date(`${year}-${month}-${day}`);
-        }),
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
     toDate:  z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-        .transform((val) => {
-            const [day, month, year] = val.split("-");
-            return new Date(`${year}-${month}-${day}`);
-        }),
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
+
     amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format")
 });
 
@@ -42,18 +36,10 @@ export const BillGeneratedSchema = z.object({
     fromDate: z
         .string()
         .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
-        // .transform((val) => {
-        //     const [day, month, year] = val.split("-");
-        //     return new Date(`${year}-${month}-${day}`);
-        // }),
 
     toDate: z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
-        // .transform((val) => {
-        //     const [day, month, year] = val.split("-");
-        //     return new Date(`${year}-${month}-${day}`);
-        // }),   
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),  
     amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
 });
 
@@ -126,18 +112,10 @@ export const MembershipActivationSchema = z.object({
     firmName: z.string(),
     fromDate:  z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-        .transform((val) => {
-            const [day, month, year] = val.split("-");
-            return new Date(`${year}-${month}-${day}`);
-        }),
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
     toDate:  z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-        .transform((val) => {
-            const [day, month, year] = val.split("-");
-            return new Date(`${year}-${month}-${day}`);
-        }),
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
 });
 
 export const MeetingScheduleSchema = z.array(
@@ -149,11 +127,7 @@ export const MeetingScheduleSchema = z.array(
     title: z.string().min(6, "Title must be at least 6 characters"),
     date: z
       .string()
-      .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-      .transform((val) => {
-        const [day, month, year] = val.split("-");
-        return new Date(`${year}-${month}-${day}`);
-      }),
+      .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
     time: z.string().nonempty("Time is required"),
     location: z.string().nonempty("Location is required"),
     agenda:z.string().optional(),
@@ -183,11 +157,7 @@ export const MeetingCancelledSchema = z.array( z.object({
     title: z.string().min(6),
     date: z
       .string()
-      .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
-      .transform((val) => {
-        const [day, month, year] = val.split("-");
-        return new Date(`${year}-${month}-${day}`);
-      }),
+      .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
     reason: z.string().optional()
 }));
 

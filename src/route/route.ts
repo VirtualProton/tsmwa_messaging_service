@@ -15,6 +15,7 @@ rootRouter.get('/logs',getLogs);
 rootRouter.post("/otp", Otp);
 
 rootRouter.post("/new_user",newUser)
+
 rootRouter.post("/membership_activation_confirmation",membership_activation_confirmation);
 rootRouter.post("/member_signin_confirmation",MemberSigninConfirmation);
 
