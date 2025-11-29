@@ -7,17 +7,13 @@ import { sendNotification } from "../service/notificationService";
 
 export const meeting_schedule = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const meetings = MeetingScheduleSchema.parse(req.body);
-        for (const { phone, firmName, title, date, time, location, agenda, note } of meetings) {
-            const today = new Date(date);
-            const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
-
+        const meetings= MeetingScheduleSchema.parse(req.body);
+        for (const { phone,firmName, title, date, time, location, agenda, note } of meetings) {
             const data: any = {
                 type: "schedule_meeeting",
                 to: phone,
-                data: [firmName, title, formattedDate, time, location, agenda, note? `Note:${note}`:""]
+                data: [firmName, title, date, time, location, agenda, note ? `Note:${note}` : ""]
             }
-            
             await sendNotification(data);
         }
 
@@ -38,49 +34,50 @@ export const meeting_schedule = async (req: Request, res: Response, next: NextFu
 
 
 
-// export const meeting_reminder = async (req: Request, res: Response, next: NextFunction) => {
-//     // console.log("meeting_schedule")
-//     try {
-//         const meetings = MeetingReminderSchema.parse(req.body);
-//         for (const { phone, firmName, title, date, time, location, starts_in } of meetings) {
-//             const today = new Date(date);
-//             const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
-//             const data: any = {
-//                 type: "meeting_reminder",
-//                 to: phone,
-//                 data: [firmName, title, formattedDate, time, location, starts_in]
-//             }
-//             await sendNotification(data);
-//         }
+export const meeting_reminder = async (req: Request, res: Response, next: NextFunction) => {
+    // console.log("meeting_schedule")
+    try {
+        const { phone, ...meetings } = MeetingReminderSchema.parse(req.body);
+        for (const ph of phone) {
 
-//         return res.status(200).json({ success: true });
-//     } catch (err) {
-//         if (err instanceof Error) {
-//             logger.error(`❌ Error in meeting_reminder controller: ${err.message}`, err);
-//         } else {
-//             logger.error(`❌ Error in meeting_reminder controller: ${JSON.stringify(err)}`);
-//         }
+            const { firmName, title, date, time, location, agenda } = meetings
+            // const today = new Date(date);
+            // const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
+            const data: any = {
+                type: "reminder_meeting",
+                to: ph,
+                data: [firmName, title, date, time, location, agenda]
+            }
+            await sendNotification(data);
+        }
 
-//         return res.status(400).json({
-//             success: false,
-//             error: err instanceof Error ? err.message : "An unknown error occurred"
-//         });
-//     }
-// }
+        return res.status(200).json({ success: true });
+    } catch (err) {
+        if (err instanceof Error) {
+            logger.error(`❌ Error in meeting_reminder controller: ${err.message}`, err);
+        } else {
+            logger.error(`❌ Error in meeting_reminder controller: ${JSON.stringify(err)}`);
+        }
+
+        return res.status(400).json({
+            success: false,
+            error: err instanceof Error ? err.message : "An unknown error occurred"
+        });
+    }
+}
 
 
 export const meeting_cancelled = async (req: Request, res: Response, next: NextFunction) => {
     // console.log("meeting_schedule")
     try {
-        const meetings = MeetingCancelledSchema.parse(req.body);
-        for (const { phone, firmName, title, date, reason } of meetings) {
-            const today = new Date(date);
-            const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "-");
+        const { phone, ...meetings } = MeetingCancelledSchema.parse(req.body);
+        for (const ph of phone) {
+            const { firmName, title, date, reason } = meetings
             const reasonText = reason ? `due to ${reason}` : ""; // always string, may be empty
             const data: any = {
                 type: "cancel_meeting",
-                to: phone,
-                data: [firmName, title, formattedDate, reason?`due to ${reasonText}`:"" ]
+                to: ph,
+                data: [firmName, title, date, reason ? `${reasonText}` : ""]
             }
             await sendNotification(data);
         }

@@ -353,3 +353,83 @@
     "message": "Date must be DD-MM-YYYY"
   }
 ]
+[2025-11-29T07:28:15.546Z] ERROR: ❌ Error in meeting_schedule controller: [
+  {
+    "expected": "array",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected array, received object"
+  }
+] [
+  {
+    "expected": "array",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected array, received object"
+  }
+]
+[2025-11-29T07:30:10.755Z] ERROR: ❌ Error in meeting_schedule controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-29T07:31:02.569Z] ERROR: ❌ Error in meeting_schedule controller: [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 6,
+    "inclusive": true,
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Title must be at least 6 characters"
+  }
+] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 6,
+    "inclusive": true,
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Title must be at least 6 characters"
+  }
+]
+[2025-11-29T08:40:47.092Z] ERROR: ❌ Error in meeting_reminder controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "time"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "time"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]

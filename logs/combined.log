@@ -742,3 +742,149 @@
 [2025-11-28T20:43:22.986Z] INFO: Job added to queue with priority 1!
 [2025-11-28T20:43:22.992Z] INFO: ::1 - - [28/Nov/2025:20:43:22 +0000] "POST /api/membership_activation_confirmation HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
 [2025-11-29T06:59:52.067Z] INFO: Shutting down server...
+[2025-11-29T07:25:20.803Z] INFO: Server running on port 3500
+[2025-11-29T07:28:15.546Z] ERROR: ❌ Error in meeting_schedule controller: [
+  {
+    "expected": "array",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected array, received object"
+  }
+] [
+  {
+    "expected": "array",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected array, received object"
+  }
+]
+[2025-11-29T07:28:15.552Z] INFO: ::1 - - [29/Nov/2025:07:28:15 +0000] "POST /api/meeting_schedule HTTP/1.1" 400 193 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:30:10.755Z] ERROR: ❌ Error in meeting_schedule controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-29T07:30:10.756Z] INFO: ::1 - - [29/Nov/2025:07:30:10 +0000] "POST /api/meeting_schedule HTTP/1.1" 400 231 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:31:02.569Z] ERROR: ❌ Error in meeting_schedule controller: [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 6,
+    "inclusive": true,
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Title must be at least 6 characters"
+  }
+] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 6,
+    "inclusive": true,
+    "path": [
+      0,
+      "title"
+    ],
+    "message": "Title must be at least 6 characters"
+  }
+]
+[2025-11-29T07:31:02.571Z] INFO: ::1 - - [29/Nov/2025:07:31:02 +0000] "POST /api/meeting_schedule HTTP/1.1" 400 258 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:31:47.390Z] INFO: Job added to queue!
+[2025-11-29T07:31:47.392Z] INFO: ::1 - - [29/Nov/2025:07:31:47 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:32:31.331Z] INFO: Job added to queue!
+[2025-11-29T07:32:31.333Z] INFO: ::1 - - [29/Nov/2025:07:32:31 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:40:24.817Z] INFO: Server running on port 3500
+[2025-11-29T07:40:38.310Z] INFO: Server running on port 3500
+[2025-11-29T07:41:10.714Z] INFO: Job added to queue!
+[2025-11-29T07:41:10.767Z] INFO: Job added to queue!
+[2025-11-29T07:41:10.816Z] INFO: Job added to queue!
+[2025-11-29T07:41:10.821Z] INFO: ::1 - - [29/Nov/2025:07:41:10 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:47:09.191Z] INFO: Server running on port 3500
+[2025-11-29T07:48:42.300Z] INFO: Server running on port 3500
+[2025-11-29T07:50:24.058Z] INFO: Job added to queue!
+[2025-11-29T07:50:24.103Z] INFO: Job added to queue!
+[2025-11-29T07:50:24.146Z] INFO: Job added to queue!
+[2025-11-29T07:50:24.152Z] INFO: ::1 - - [29/Nov/2025:07:50:24 +0000] "POST /api/meeting_schedule HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:51:09.165Z] INFO: Server running on port 3500
+[2025-11-29T07:51:19.532Z] INFO: Job added to queue!
+[2025-11-29T07:51:19.570Z] INFO: Job added to queue!
+[2025-11-29T07:51:19.610Z] INFO: Job added to queue!
+[2025-11-29T07:51:19.616Z] INFO: ::1 - - [29/Nov/2025:07:51:19 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T07:52:43.089Z] INFO: Server running on port 3500
+[2025-11-29T07:52:53.859Z] INFO: Job added to queue!
+[2025-11-29T07:52:53.904Z] INFO: Job added to queue!
+[2025-11-29T07:52:53.948Z] INFO: Job added to queue!
+[2025-11-29T07:52:53.954Z] INFO: ::1 - - [29/Nov/2025:07:52:53 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:03:07.828Z] INFO: Job added to queue!
+[2025-11-29T08:03:07.877Z] INFO: Job added to queue!
+[2025-11-29T08:03:07.924Z] INFO: Job added to queue!
+[2025-11-29T08:03:07.925Z] INFO: ::1 - - [29/Nov/2025:08:03:07 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:04:24.908Z] INFO: Server running on port 3500
+[2025-11-29T08:04:31.089Z] INFO: Job added to queue!
+[2025-11-29T08:04:31.137Z] INFO: Job added to queue!
+[2025-11-29T08:04:31.185Z] INFO: Job added to queue!
+[2025-11-29T08:04:31.189Z] INFO: ::1 - - [29/Nov/2025:08:04:31 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:09:45.285Z] INFO: Job added to queue!
+[2025-11-29T08:09:45.326Z] INFO: Job added to queue!
+[2025-11-29T08:09:45.371Z] INFO: Job added to queue!
+[2025-11-29T08:09:45.373Z] INFO: ::1 - - [29/Nov/2025:08:09:45 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:26:12.337Z] INFO: Server running on port 3500
+[2025-11-29T08:27:08.250Z] INFO: Job added to queue!
+[2025-11-29T08:27:08.293Z] INFO: Job added to queue!
+[2025-11-29T08:27:08.335Z] INFO: Job added to queue!
+[2025-11-29T08:27:08.340Z] INFO: ::1 - - [29/Nov/2025:08:27:08 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:27:54.253Z] INFO: Server running on port 3500
+[2025-11-29T08:27:56.396Z] INFO: Job added to queue!
+[2025-11-29T08:27:56.437Z] INFO: Job added to queue!
+[2025-11-29T08:27:56.478Z] INFO: Job added to queue!
+[2025-11-29T08:27:56.483Z] INFO: ::1 - - [29/Nov/2025:08:27:56 +0000] "POST /api/meeting_cancelled HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:37:20.985Z] INFO: Server running on port 3500
+[2025-11-29T08:37:28.772Z] INFO: Server running on port 3500
+[2025-11-29T08:40:47.092Z] ERROR: ❌ Error in meeting_reminder controller: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "time"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "time"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+[2025-11-29T08:40:47.096Z] INFO: ::1 - - [29/Nov/2025:08:40:47 +0000] "POST /api/meeting_reminder HTTP/1.1" 400 220 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:42:55.905Z] INFO: Job added to queue!
+[2025-11-29T08:42:55.945Z] INFO: Job added to queue!
+[2025-11-29T08:42:55.984Z] INFO: Job added to queue!
+[2025-11-29T08:42:55.986Z] INFO: ::1 - - [29/Nov/2025:08:42:55 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T08:44:36.748Z] INFO: Job added to queue!
+[2025-11-29T08:44:36.789Z] INFO: Job added to queue!
+[2025-11-29T08:44:36.829Z] INFO: Job added to queue!
+[2025-11-29T08:44:36.831Z] INFO: ::1 - - [29/Nov/2025:08:44:36 +0000] "POST /api/meeting_reminder HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T10:33:55.000Z] INFO: Server running on port 3500
+[2025-11-29T10:35:47.484Z] INFO: Shutting down server...
