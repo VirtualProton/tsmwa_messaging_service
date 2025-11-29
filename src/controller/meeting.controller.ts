@@ -70,13 +70,13 @@ export const meeting_reminder = async (req: Request, res: Response, next: NextFu
 export const meeting_cancelled = async (req: Request, res: Response, next: NextFunction) => {
     // console.log("meeting_schedule")
     try {
-        const { phone, ...meetings } = MeetingCancelledSchema.parse(req.body);
-        for (const ph of phone) {
-            const { firmName, title, date, reason } = meetings
+        const meetings  = MeetingCancelledSchema.parse(req.body);
+        for (const { phone,firmName, title, date, reason } of meetings) {
+
             const reasonText = reason ? `due to ${reason}` : ""; // always string, may be empty
             const data: any = {
                 type: "cancel_meeting",
-                to: ph,
+                to: phone,
                 data: [firmName, title, date, reason ? `${reasonText}` : ""]
             }
             await sendNotification(data);
