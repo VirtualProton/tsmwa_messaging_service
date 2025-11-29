@@ -295,3 +295,61 @@
     "message": "Invalid input: expected string, received undefined"
   }
 ]
+[2025-11-18T09:44:30.451Z] ERROR: ❌ Error in welcome controller: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+] [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+[2025-11-28T20:40:30.122Z] ERROR: ❌ Error in membership_activation_confirmation controller: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "fromDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "toDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  }
+] [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "fromDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "toDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  }
+]

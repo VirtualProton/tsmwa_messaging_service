@@ -35,12 +35,12 @@ import { sendNotification } from "../service/notificationService";
 export const membership_activation_confirmation = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const { phone, firmName, fromDate, toDate } = MembershipActivationSchema.parse(req.body);
-        const formattedFromDate = new Date(fromDate).toLocaleDateString("en-GB").replace(/\//g, "-");
-        const formattedToDate = new Date(toDate).toLocaleDateString("en-GB").replace(/\//g, "-");
+        // const formattedFromDate = new Date(fromDate).toLocaleDateString("en-GB").replace(/\//g, "-");
+        // const formattedToDate = new Date(toDate).toLocaleDateString("en-GB").replace(/\//g, "-");
         const data: any = {
             type: "membership_activation",
             to: phone,
-            data: [firmName, formattedFromDate, formattedToDate]
+            data: [firmName, fromDate, toDate]
         }
         await sendNotification(data,1);
         return res.status(200).json({ success: true });

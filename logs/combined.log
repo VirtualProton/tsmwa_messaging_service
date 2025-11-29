@@ -666,3 +666,79 @@
 [2025-11-12T19:16:35.200Z] INFO: ::1 - - [12/Nov/2025:19:16:35 +0000] "GET /api/userconsent?phone=9652314406 HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 [2025-11-12T19:17:24.293Z] INFO: Job added to queue with priority 1!
 [2025-11-12T19:17:24.294Z] INFO: ::1 - - [12/Nov/2025:19:17:24 +0000] "GET /api/userconsent?phone=8247542367 HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+[2025-11-18T09:44:06.516Z] INFO: Server running on port 3500
+[2025-11-18T09:44:30.451Z] ERROR: ❌ Error in welcome controller: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+] [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+[2025-11-18T09:44:30.460Z] INFO: ::1 - - [18/Nov/2025:09:44:30 +0000] "POST /api/member_signin_confirmation HTTP/1.1" 400 53 "-" "PostmanRuntime/7.39.1"
+[2025-11-18T09:46:15.657Z] INFO: Job added to queue with priority 1!
+[2025-11-18T09:46:15.660Z] INFO: ::1 - - [18/Nov/2025:09:46:15 +0000] "POST /api/member_signin_confirmation HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-18T09:49:15.594Z] INFO: Job added to queue with priority 1!
+[2025-11-18T09:49:15.596Z] INFO: ::1 - - [18/Nov/2025:09:49:15 +0000] "POST /api/member_signin_confirmation HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-18T09:49:55.253Z] INFO: Job added to queue with priority 1!
+[2025-11-18T09:49:55.255Z] INFO: ::1 - - [18/Nov/2025:09:49:55 +0000] "POST /api/member_signin_confirmation HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-18T12:44:04.316Z] INFO: Server running on port 3500
+[2025-11-28T20:37:46.802Z] INFO: Server running on port 3500
+[2025-11-28T20:40:15.929Z] INFO: ::1 - - [28/Nov/2025:20:40:15 +0000] "GET /api/membership_activation_confirmation HTTP/1.1" 404 177 "-" "PostmanRuntime/7.39.1"
+[2025-11-28T20:40:30.122Z] ERROR: ❌ Error in membership_activation_confirmation controller: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "fromDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "toDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  }
+] [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "fromDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{2}-\\d{2}-\\d{4}$/",
+    "path": [
+      "toDate"
+    ],
+    "message": "Date must be DD-MM-YYYY"
+  }
+]
+[2025-11-28T20:40:30.127Z] INFO: ::1 - - [28/Nov/2025:20:40:30 +0000] "POST /api/membership_activation_confirmation HTTP/1.1" 400 53 "-" "PostmanRuntime/7.39.1"
+[2025-11-28T20:41:33.389Z] INFO: Job added to queue with priority 1!
+[2025-11-28T20:41:33.390Z] INFO: ::1 - - [28/Nov/2025:20:41:33 +0000] "POST /api/membership_activation_confirmation HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-28T20:43:18.114Z] INFO: Server running on port 3500
+[2025-11-28T20:43:22.986Z] INFO: Job added to queue with priority 1!
+[2025-11-28T20:43:22.992Z] INFO: ::1 - - [28/Nov/2025:20:43:22 +0000] "POST /api/membership_activation_confirmation HTTP/1.1" 200 16 "-" "PostmanRuntime/7.39.1"
+[2025-11-29T06:59:52.067Z] INFO: Shutting down server...
