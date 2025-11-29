@@ -44,10 +44,12 @@ export const WhatsAppTemplates = {
     templateSid: MEETING_CANCEL_TEMPLATE_ID, // Twilio Content SID
     variables: (firmName:string, title:string, date:string, reason:string) => [firmName, title, date, reason]
   },
+
   update_meeting: {
     templateSid: MEETING_UPDATE_TEMPLATE_ID, // Twilio Content SID
     variables: (firmName:string, title:string, date:string, time:string, location:string, agenda:string, note:string) => [firmName, title, date, time, location, agenda, note]
   },
+  
   reminder_meeting:{
      templateSid:MEETING_REMINDER_TEMPLATE_ID,
      variables:(firmName:string, title:string, date:string, time:string, location:string,agenda:string) =>[firmName, title, date, time, location, agenda]
