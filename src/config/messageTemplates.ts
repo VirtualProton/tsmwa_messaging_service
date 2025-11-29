@@ -50,6 +50,6 @@ export const WhatsAppTemplates = {
   },
   reminder_meeting:{
      templateSid:MEETING_REMINDER_TEMPLATE_ID,
-     variables:(firmName:string, title:string, date:string, time:string, location:string,starts_in:string) =>[firmName, title, date, time, location, starts_in]
+     variables:(firmName:string, title:string, date:string, time:string, location:string,agenda:string) =>[firmName, title, date, time, location, agenda]
   }
 };
