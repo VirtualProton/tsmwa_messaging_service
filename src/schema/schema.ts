@@ -134,7 +134,22 @@ export const MeetingScheduleSchema = z.array(
         note: z.string().optional()
     }));
 
-
+export const MeetingUpdateSchema = z.array(
+    z.object({
+        phone: z
+            .string()
+            .regex(/^\d{10}$/, "Phone must be exactly 10 digits"),
+        firmName: z.string(),
+        title: z.string().min(6, "Title must be at least 6 characters"),
+        date: z
+            .string()
+            .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
+        time: z.string().nonempty("Time is required"),
+        location: z.string().nonempty("Location is required"),
+        agenda: z.string().optional(),
+        note: z.string().optional()
+    }));
+    
 export const MeetingReminderSchema = z.object({
     phone: z.array(z
         .string()
@@ -149,7 +164,7 @@ export const MeetingReminderSchema = z.object({
     agenda: z.string()
 });
 
-export const MeetingCancelledSchema =z.array( z.object({
+export const MeetingCancelledSchema = z.array(z.object({
     phone: z
         .string()
         .regex(/^\d{10}$/, "Phone must be exactly 10 digits"),

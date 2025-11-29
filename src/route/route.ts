@@ -3,7 +3,7 @@ import { Otp } from "../controller/Otp.Controller";
 
 import {  GenerateBill, PaymentReceived, PaymentRemainder } from "../controller/Payment.Controller";
 
-import { meeting_cancelled, meeting_reminder, meeting_schedule } from "../controller/meeting.controller";
+import { meeting_cancelled, meeting_reminder, meeting_schedule, meeting_update } from "../controller/meeting.controller";
 import { newUser } from "../controller/user.controller";
 import { getLogs } from "../controller/log.controller";
 import { membership_activation_confirmation, MemberSigninConfirmation } from "../controller/membership.controller";
@@ -30,4 +30,6 @@ rootRouter.post('/meeting_schedule',meeting_schedule); //done
 rootRouter.post('/meeting_reminder',meeting_reminder); //done
 
 rootRouter.post('/meeting_cancelled',meeting_cancelled);  //done
+
+rootRouter.post('/meeting_update',meeting_update);  
 export default rootRouter;
