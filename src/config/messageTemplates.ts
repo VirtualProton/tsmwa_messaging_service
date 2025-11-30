@@ -30,7 +30,7 @@ export const WhatsAppTemplates = {
   },
   payment_reminder:{ //done
     templateSid: PAYMENT_REMINDER_TEMPLATE_ID, // Twilio Content SID
-    variables: (firmName:string, dueAmount:string, membership ="Membership Fee",dueDate:string) => [firmName, dueAmount, membership,dueDate],
+    variables: (firmName:string, dueAmount:string) => [firmName, dueAmount],
   },
   payment_received:{//done
     templateSid: PAYMENT_RECEIVED_TEMPLATE_ID, // Twilio Content SID
