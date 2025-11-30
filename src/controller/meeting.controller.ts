@@ -104,7 +104,7 @@ export const meeting_update = async (
         const meetings = MeetingUpdateSchema.parse(req.body);
         for (const { phone, firmName, title, date, time, location, agenda, note } of meetings) {
             const data: any = {
-                type: "schedule_meeeting",
+                type: "update_meeting",
                 to: phone,
                 data: [firmName, title, date, time, location, agenda, note ? `Note:${note}` : ""]
             }
