@@ -30,14 +30,13 @@ export const GenerateBill = async (req: Request, res: Response, next: NextFuncti
 export const PaymentRemainder = async (req: Request, res: Response, next: NextFunction) => {
     console.log("🔔 PaymentRemainder Controller accessed");
     try {
-        const { phone, firmName, fromDate, toDate, amount } = PaymentRemainderSchema.parse(req.body);
-        const formattedFromDate = new Date(fromDate).toLocaleDateString("en-GB").replace(/\//g, "-");
-        const formattedToDate = new Date(toDate).toLocaleDateString("en-GB").replace(/\//g, "-");
+        const { phone, firmName, amount, dueDate } = PaymentRemainderSchema.parse(req.body);
+       
 
         const data: any = {
             type: "payment_reminder",
             to: phone,
-            data: [firmName, formattedFromDate, formattedToDate, amount]
+            data: [firmName,amount ,"", dueDate]
         }
         await sendNotification(data,2);
         return res.status(200).json({ success: true });

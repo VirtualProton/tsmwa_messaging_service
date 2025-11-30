@@ -19,15 +19,10 @@ export const MemberSignConfirmationSchema = z.object({
 export const PaymentRemainderSchema = z.object({
     phone: z.string().regex(/^\d{10}$/, "phone must be exactly 10 digits"),
     firmName: z.string().max(100),
-
-    fromDate: z
+    amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format"),
+    dueDate:z
         .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
-    toDate: z
-        .string()
-        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY"),
-
-    amount: z.string().regex(/^\d+(\.\d{1,2})?$/, "Invalid amount format")
+        .regex(/^\d{2}-\d{2}-\d{4}$/, "Date must be DD-MM-YYYY")
 });
 
 export const BillGeneratedSchema = z.object({
